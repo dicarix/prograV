@@ -71,7 +71,7 @@ if ( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navi
     }
   };
   window.onload= function () {
-      parallax.parallaxScroll();
+      // parallax.parallaxScroll();
       clearTimeout(parallax.resizeTimer);
       parallax.resizeTimer = setTimeout(parallax.parallaxResize(), 1);
   }

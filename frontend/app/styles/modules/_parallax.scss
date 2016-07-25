@@ -49,7 +49,7 @@
 }
 @include breakpoint('tablet-up') {
   #homepage-panel {
-    top: -400px;
+    // top: -400px;
   }
 }
 @include breakpoint('tablet-down') {
