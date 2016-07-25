@@ -1,0 +1,198 @@
+.#{$prefix}-m-homepage-grid {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &.is-world {
+    background-color: #2350A0;
+  }
+
+  &.is-adventures {
+    background-color: #0A9646;
+  }
+
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  .grid-item {
+    padding: 4.5px;
+    > a {
+      color: $light-primary;
+    }
+  }
+
+  .sat-shadow {
+    height: 80%;
+  }
+
+  .hover-close {
+    z-index: 1;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+    svg {
+      width: 18px;
+      height: 18px;
+      pointer-events: none;
+    }
+  }
+
+  .grid-box {
+    position: relative;
+    overflow: hidden;
+    > img {
+      width: 100%;
+      min-height: 200px;
+    }
+    .youtube-iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    h4 {
+      @include fontBold;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+    p {
+      @include fontItalic;
+      font-size: 14px;
+      line-height: 16px;
+      margin-bottom: 0;
+    }
+    .btn-primary {
+      margin-top: 10px;
+      padding: 10px 15px;
+      font-size: 12px;
+      line-height: 12px;
+    }
+    .category {
+      margin-bottom: 15px;
+    }
+    .share {
+      display: inline;
+      margin-left: 5px;
+      svg {
+        pointer-events: none;
+        vertical-align: middle;
+        width: 12px;
+        height: 12px;
+      }
+      span {
+        @include fontLight;
+        font-size: 13px;
+        line-height: 13px;
+      }
+    }
+  }
+
+  .grid-content {
+    position: absolute;
+    bottom: 5%; left: 0;
+    margin: 0 15px;
+  }
+
+  // Font Styles For Each Item Size
+  .full-height {
+    h4 {
+      font-size: 24px;
+      line-height: 25px;
+    }
+    p {
+      margin-top: 12px;
+    }
+  }
+  .half-height {
+    h4 {
+      font-size: 12px;
+      line-height: 16px;
+    }
+    p {
+      margin-top: 6px;
+    }
+  }
+  p.special {
+    @include fontRegular;
+  }
+  h4.special {
+    margin-top: 5px;
+    font-size: 24px;
+    line-height: 25px;
+    color: $brand-primary;
+  }
+
+  // Hover Styles
+  .item-hover {
+    p, .btn-primary {
+      position: absolute;
+      bottom: -100%;
+      visibility: hidden;
+      opacity: 0;
+    }
+    &.active {
+      @include transformScale(1.1);
+      @include transition(all 0.3s ease-in-out);
+      box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.6);
+      z-index: 1;
+      .sat-shadow {
+        height: 200%;
+        @include transition(all 0.3s ease);
+      }
+      > img {
+        @include transformScale(1.1);
+        @include imageBlur(5px);
+      }
+      h4 {
+        padding-right: 25px;
+      }
+      p, .btn-primary {
+        position: static;
+        visibility: visible;
+        opacity: 1;
+        @include transition(all 0.3s ease);
+      }
+    }
+  }
+
+  @include breakpoint('tablet-up') {
+    .loading * {
+      visibility: hidden !important;
+    }
+
+    .loading {
+      background-color: rgba(0,0,0,0.2);
+      background-image: url(../images/global/loading.gif);
+      background-size: 40px;
+      background-repeat: no-repeat;
+      background-position: center;
+      &.item-hover {
+        @include transformScale(1);
+        box-shadow: none;
+        > img {
+          @include transformScale(1);
+        }
+      }
+    }
+  }
+
+  @include breakpoint('phone') {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+// Add Close X if it is a touch browser.
+html {
+  &.touch {
+    .item-hover {
+      &.active {
+        .hover-close {
+          display: block;
+        }
+      }
+    }
+  }
+}

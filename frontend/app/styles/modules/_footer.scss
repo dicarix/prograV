@@ -1,0 +1,214 @@
+.#{$prefix}-m-footer {
+  color: $dark-primary;
+  .list-unstyled {
+    margin-bottom: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  .panel,
+  .list-group-item {
+    border: none;
+    border-radius: 0 !important;
+  }
+  .panel-group {
+    margin-bottom: 0;
+  }
+  .panel-heading {
+    padding: 0;
+    border-radius: 0;
+  }
+  .footer-title {
+    display: block;
+    padding: 10px 15px;
+    @include fontLight;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .social-item {
+    &.facebook { color: #3B5998; }
+    &.twitter { color: #00ACED; }
+    &.instagram { color: #125688; }
+    &.google { color: #DD4B39; }
+    &.pinterest { color: #CB2027; }
+    &.youtube { color: #BB0000; }
+    &.flickr { color: #FF0084; }
+    &:hover {
+      color: #6C6C6C;
+    }
+  }
+  .trip-advisor {
+    margin-top: 5px;
+  }
+
+  @include breakpoint('phone-up') {
+    .footer-social {
+      background-color: $gray-primary;
+      padding: 44px 0 46px;
+    }
+    .social-item {
+      svg {
+        width: 22px;
+        height: 22px;
+        display: block;
+        margin: 0 auto 10px;
+        pointer-events: none;
+      }
+      span {
+        display: block;
+        text-align: center;
+      }
+    }
+    .footer-menu {
+      background-color: #000000;
+      padding: 30px 0 45px;
+      .list-group-item {
+        a {
+          color: #7CA9E7;
+        }
+      }
+    }
+    // Force accordion BS panels to always show on deskop.
+    .panel-collapse {
+      display: block;
+      height: auto !important;
+    }
+    // Remove default styles from BS accordions.
+    .panel,
+    .panel-heading,
+    .list-group,
+    .list-group-item {
+      background-color: transparent;
+      border: none !important;
+    }
+    .panel-heading {
+      margin-bottom: 12px;
+    }
+    .list-group-item {
+      padding: 0;
+      text-transform: uppercase;
+      @include fontArial;
+      font-size: 10px;
+      line-height: 18px;
+      color: #B8B8B8;
+      &.heading {
+        font-size: 12px;
+        line-height: 24px;
+        color: $gray-primary;
+        margin-top: 25px;
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+    .footer-social {
+      .panel-heading {
+        display: none;
+      }
+    }
+    .footer-title {
+      pointer-events: none;
+      color: $gray-primary;
+      padding: 0;
+    }
+    .nav-caret {
+      display: none;
+    }
+  }
+  @include breakpoint('phone') {
+    .panel-group {
+      padding: 0;
+    }
+    // Reset Accordion Styles
+    .list-group {
+      border: 0 !important;
+    }
+    .list-group-item {
+      border: 0;
+      color: #B8B8B8;
+      font-size: 12px;
+      line-height: 24px;
+      @include fontArial;
+      text-transform: uppercase;
+      &.heading {
+        color: $gray-primary;
+        font-size: 14px;
+        line-height: 24px;
+        margin-top: 20px;
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+    .footer-social {
+      border-top: 1px solid $gray-primary;
+      .panel-heading,
+      .list-group-item {
+        @include sat-gradient(#FEFEFF, #F3F2F2);
+      }
+      .list-group-item {
+        padding: 0;
+      }
+      .nav-caret {
+        color: #4C4C4C;
+      }
+    }
+    .social-item {
+      display: block;
+      padding: 10px 15px;
+      svg {
+        width: 35px;
+        height: 24px;
+        vertical-align: middle;
+        pointer-events: none;
+        margin-left: 5px;
+      }
+      span {
+        margin-left: 20px;
+      }
+    }
+    .footer-menu {
+      .panel-heading {
+        @include sat-gradient(#4A4A4A, #242424);
+        color: $light-primary;
+      }
+      .nav-caret {
+        color: $light-primary;
+      }
+      .list-group {
+        padding: 22px 18px;
+        background-color: #000000;
+      }
+      .list-group-item {
+        background-color: transparent;
+        padding: 0;
+      }
+    }
+    .nav-caret {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      svg {
+        width: 14px;
+        height: 7px;
+        pointer-events: none;
+      }
+    }
+    .footer-title {
+      .caret-open {
+        display: none;
+      }
+      .caret-close {
+        display: block;
+      }
+      &.collapsed {
+        .caret-open {
+          display: block;
+        }
+        .caret-close {
+          display: none;
+        }
+      }
+    }
+  }
+}

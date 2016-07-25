@@ -1,0 +1,110 @@
+.#{$prefix}-m-alternative {
+  padding-top: 80px;
+  padding-bottom: 60px;
+  h2 {
+    color: $dark-primary;
+    margin-bottom: 60px;
+  }
+  .alternative-image {
+    padding: 0;
+  }
+  .alternative-content {
+    h2 {
+      text-transform: uppercase;
+      @include fontBold;
+      font-size: 36px;
+      line-height: 36px;
+      color: $light-primary;
+      margin-bottom: 10px;
+    }
+    p, a {
+      font-size: 18px;
+      line-height: 26px;
+    }
+    p {
+      @include fontItalic;
+      color: #B1CAF6;
+    }
+    a {
+      @include fontRegular;
+      text-decoration: none;
+      padding-bottom: 1px;
+      border-bottom: 1px solid #5A7CB8;
+      color: $light-primary;
+      &:hover {
+        border-bottom-color: $light-primary;
+      }
+    }
+  }
+
+  @include breakpoint('phone-up') {
+    .alternative {
+      background-color: #2350A0;
+      height: 240px;
+      overflow: hidden;
+      margin-bottom: 15px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .alternative-content {
+      display: flex;
+      align-items: center;
+      height: 240px;
+      padding-left: 30px;
+    }
+    .alternative-number {
+      @include fontLight;
+      font-size: 155px;
+      line-height: 180px;
+      text-align: right;
+      padding-top: 37px;
+      padding-right: 10px;
+    }
+    .alternative-image {
+      img {
+        height: 240px;
+      }
+    }
+  }
+
+  @include breakpoint('tablet') {
+    .alternative-content {
+      h2 {
+        font-size: 30px;
+        line-height: 32px;
+      }
+      p, a {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+
+  @include breakpoint('tablet-portrait-down') {
+    padding-top: 110px;
+  }
+
+  @include breakpoint('phone') {
+    .alternative {
+      padding: 0 5px;
+    }
+    .alternative-content {
+      background-color: #2350A0;
+      padding: 30px 20px 50px;
+      h2 {
+        font-size: 22px;
+        line-height: 25px;
+      }
+      p, a {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+    .alternative-image {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

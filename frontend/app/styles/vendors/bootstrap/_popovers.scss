@@ -1,0 +1,162 @@
+// Bootstrap Popvers
+// -------------------------
+
+.popover {
+  max-width: none;
+  border-radius: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(198,198,198, 0.2);
+}
+
+.popover.top {
+  margin-top: -15px;
+}
+
+.popover.right {
+  margin-left: 15px;
+}
+
+.popover.bottom {
+  margin-top: 15px;
+}
+
+.popover.left {
+  margin-left: -15px;
+}
+
+.#{$prefix}-m-explore,
+.#{$prefix}-m-filter {
+  .results-item {
+    .popover {
+      max-width: 200px;
+      margin-left: 12px;
+    }
+    .popover-content {
+      overflow: hidden;
+    }
+  }
+  .popover {
+    max-width: 430px;
+  }
+  .popover-content {
+    a {
+      text-decoration: none;
+      display: inline-block;
+      @include sat-gradient(#FFFEFF, #F3F3F3);
+      border: 1px solid #DCDCDC;
+      padding: 3px;
+      margin-right: 5px;
+      margin-bottom: 4px;
+      font-size: 12px;
+      font-weight: bold;
+      color: $dark-primary;
+      &:hover {
+        @include sat-gradient(#F3F3F3, #FFFEFF);
+        text-decoration: line-through;
+      }
+      svg {
+        width: 9px;
+        height: 9px;
+        vertical-align: middle;
+        margin-left: 5px;
+      }
+    }
+    .popover-clearall {
+      border-top: 1px dotted #7F7F7F;
+      padding-top: 8px;
+      margin-top: 5px;
+      a {
+        padding: 8px;
+      }
+      .js-closetooltip {
+        display: none;
+      }
+    }
+    .item-tag {
+      background: none;
+      border: none;
+      padding: 0;
+      margin-right: 5px;
+      margin-bottom: 0;
+      float: left;
+      &:hover {
+        background: none;
+        text-decoration: none;
+      }
+      &:after {
+        content: ",";
+      }
+      &:last-child {
+        &:after {
+          content: "";
+        }
+      }
+    }
+  }
+  .filter-title {
+    .popover-content {
+      padding: 5px 6px;
+    }
+  }
+}
+
+.wishlist-popover {
+  max-width: 250px;
+  color: $dark-primary;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: bold;
+  .popover-content {
+    overflow: hidden;
+  }
+  p {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted $dark-primary;
+  }
+}
+
+@include breakpoint('tablet-portrait-down') {
+  .share-popover {
+    .btn-share {
+      width: 100%;
+      margin-top: 6px;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@include breakpoint('phone') {
+  .popover {
+    max-width: 130px;
+  }
+
+  .#{$prefix}-m-explore,
+  .#{$prefix}-m-filter {
+    .popover {
+      max-width: none;
+    }
+    .popover-content {
+      .popover-clearall {
+        .js-closetooltip {
+          display: block;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .wishlist-popover {
+    max-width: 230px;
+  }
+}
+
+@include breakpoint('phone-landscape') {
+  .#{$prefix}-m-explore {
+    .popover.top {
+      margin-top: 2px;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+// Bootstrap grid
+// -------------------------
+
+// Create 5 and 7 columns layout
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths,
+.col-xs-7ths,
+.col-sm-7ths,
+.col-md-7ths,
+.col-lg-7ths {
+  position: relative;
+  min-height: 1px;
+  padding-right: 7px;
+  padding-left: 7px;
+}
+.col-xs-5ths {
+  width: 20%;
+  float: left;
+}
+.col-xs-7ths {
+  width: 14.285714286%;
+  float: left;
+}
+@media (min-width: $screen-sm-min) {
+  .col-sm-5ths {
+    width: 20%;
+    float: left;
+  }
+  .col-sm-7ths {
+    width: 14.285714286%;
+    float: left;
+  }
+}
+@media (min-width: $screen-md-min) {
+  .col-md-5ths {
+    width: 20%;
+    float: left;
+  }
+  .col-md-7ths {
+    width: 14.285714286%;
+    float: left;
+  }
+}
+@media (min-width: $screen-lg-min) {
+  .col-lg-5ths {
+    width: 20%;
+    float: left;
+  }
+  .col-lg-7ths {
+    width: 14.285714286%;
+    float: left;
+  }
+}

@@ -1,0 +1,16 @@
+.#{$prefix}-p-top10alternative {
+  @include breakpoint('phone-up') {
+    .#{$prefix}-m-share {
+      .separator {
+        display: none;
+      }
+    }
+  }
+  @include breakpoint('phone') {
+    .#{$prefix}-m-share {
+      .separator {
+        width: 90%;
+      }
+    }
+  }
+}

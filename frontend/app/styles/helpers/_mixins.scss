@@ -1,0 +1,139 @@
+//
+// Mixins
+// --------------------------------------------------
+
+// core/_fonts.scss
+
+@mixin fontArial() {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; // Arial
+}
+@mixin fontRegular() {
+  font-family: '#{$font-regular}'; // Regular
+}
+@mixin fontLight() {
+  font-family: '#{$font-light}'; // Light
+}
+@mixin fontItalic() {
+  font-family: '#{$font-italic}'; // Italic
+}
+@mixin fontBold() {
+  font-family: '#{$font-bold}'; // Bold
+}
+
+@mixin breakpoint($points) {
+  @each $point in $points {
+    @if $point == large {
+      @media (min-width: $screen-lg-min) { @content; }
+    }
+    @else if $point == desktop {
+      @media (min-width: $screen-md-min) and (max-width: $screen-lg-min) { @content; }
+    }
+    @else if $point == desktop-down {
+      @media (max-width: $screen-md-max) { @content; }
+    }
+    @else if $point == tablet-up {
+      @media (min-width: $screen-md-min) { @content; }
+    }
+    @else if $point == tablet {
+      @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) { @content; }
+    }
+    @else if $point == tablet-down {
+      @media (max-width: $screen-sm-max) { @content; }
+    }
+    @else if $point == tablet-portrait-down {
+      @media (max-width: $screen-xs-max)  { @content; }
+      @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) and (orientation: portrait) { @content; }
+    }
+    @else if $point == tablet-landscape-up {
+      @media (min-width: $screen-md-min) { @content; }
+      @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) and (orientation: landscape) { @content; }
+    }
+    @else if $point == tablet-portrait {
+      @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) and (orientation: portrait) { @content; }
+    }
+    @else if $point == tablet-landscape {
+      @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) and (orientation: landscape) { @content; }
+    }
+    @else if $point == phone-up {
+      @media (min-width: $screen-sm-min) { @content; }
+    }
+    @else if $point == phone {
+      @media (max-width: $screen-xs-max)  { @content; }
+    }
+    @else if $point == phone-portrait {
+      @media (max-width: $screen-xs-max) and (orientation: portrait)  { @content; }
+    }
+    @else if $point == phone-landscape {
+      @media (max-width: $screen-xs-max) and (orientation: landscape)  { @content; }
+    }
+  }
+}
+
+@mixin retinabg($img, $width: 0, $height: 0) {
+  @media (-webkit-min-device-pixel-ratio: 1.5),
+  (min--moz-device-pixel-ratio: 1.5),
+  (-o-min-device-pixel-ratio: 3/2),
+  (min-device-pixel-ratio: 1.5),
+  (min-resolution: 144dpi) {
+    background-image: $img;
+    @if $width != 0 {
+      background-size: $width $height;
+    }
+    @if $width == 0 {
+      background-size: contain;
+    }
+  }
+}
+
+@mixin vertical-align($position: absolute) {
+  position: $position;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+
+@mixin transition($args...) {
+  -moz-transition: $args;
+  -webkit-transition: $args;
+  -o-transition: $args;
+  -ms-transition: $args;
+  transition: $args;
+}
+
+@mixin transformScale($args) {
+  -moz-transform: scale($args);
+  -webkit-transform: scale($args);
+  -o-transform: scale($args);
+  -ms-transform: scale($args);
+  transform: scale($args);
+}
+
+@mixin imageBlur($args) {
+  -moz-filter: blur($args);
+  -webkit-filter: blur($args);
+  -o-filter: blur($args);
+  -ms-filter: blur($args);
+  filter: blur($args);
+}
+
+@mixin displayFlex() {
+  display:         flex;
+  display:  -webkit-box;
+  display:  -ms-flexbox;
+  display: -webkit-flex;
+}
+
+@mixin sat-gradient($start-color, $end-color) {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="$start-color", endColorstr="$end-color");
+  background-image: -khtml-gradient(linear, left top, left bottom, from($start-color), to($end-color));
+  background-image: -moz-linear-gradient(top, $start-color, $end-color);
+  background-image: -ms-linear-gradient(top, $start-color, $end-color);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $start-color), color-stop(100%, $end-color));
+  background-image: -webkit-linear-gradient(top, $start-color, $end-color);
+  background-image: -o-linear-gradient(top, $start-color, $end-color);
+  background-image: linear-gradient($start-color, $end-color);
+  -webkit-font-smoothing: antialiased;
+}

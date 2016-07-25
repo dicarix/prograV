@@ -1,0 +1,56 @@
+[
+  {
+    "sliderIndex": 0,
+    "latitude": -32.060012,
+    "longitude": 26.572656,
+    "label": "Eastern Cape"
+  },
+  {
+    "sliderIndex": 1,
+    "latitude": -28.460273,
+    "longitude": 26.843538,
+    "label": "Free State"
+  },
+  {
+    "sliderIndex": 2,
+    "latitude": -26.207070,
+    "longitude": 27.980609,
+    "label": "Gauteng"
+  },
+  {
+    "sliderIndex": 3,
+    "latitude": -28.357412,
+    "longitude": 31.044432,
+    "label": "KwaZulu-Natal"
+  },
+  {
+    "sliderIndex": 4,
+    "latitude": -23.898396,
+    "longitude": 29.538364,
+    "label": "Limpopo"
+  },
+  {
+    "sliderIndex": 5,
+    "latitude": -26.348432,
+    "longitude": 29.937280,
+    "label": "Mpumalanga"
+  },
+  {
+    "sliderIndex": 6,
+    "latitude": -26.596571,
+    "longitude": 25.615925,
+    "label": "North West"
+  },
+  {
+    "sliderIndex": 7,
+    "latitude": -30.120213,
+    "longitude": 21.758536,
+    "label": "Northern Cape"
+  },
+  {
+    "sliderIndex": 8,
+    "latitude": -33.960775,
+    "longitude": 19.395644,
+    "label": "Western Cape"
+  }
+]

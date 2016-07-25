@@ -1,0 +1,48 @@
+{
+  "name": "prograV-webapp",
+  "private": true,
+  "dependencies": {
+    "bootstrap-multiselect": "~0.9.13",
+    "bootstrap-sass": "~3.3.5",
+    "Google-Maps-Marker-With-Label": "google-maps-marker-with-label#~1.1.11",
+    "highcharts": "highcharts-release#~4.1.9",
+    "imagesloaded": "~3.2.0",
+    "jquery": "~2.1.1",
+    "js-cookie": "~2.0.4",
+    "matchHeight": "matchheight#~0.6.0",
+    "modernizr": "~2.8.1",
+    "skrollr": "~0.6.30",
+    "slick-carousel": "~1.5.8"
+  },
+  "overrides": {
+    "modernizr": {
+      "main": []
+    },
+    "bootstrap-sass": {
+      "main": [
+        "assets/javascripts/bootstrap/transition.js",
+        "assets/javascripts/bootstrap/collapse.js",
+        "assets/javascripts/bootstrap/dropdown.js",
+        "assets/javascripts/bootstrap/modal.js",
+        "assets/javascripts/bootstrap/tooltip.js",
+        "assets/javascripts/bootstrap/popover.js",
+        "assets/javascripts/bootstrap/affix.js"
+      ]
+    },
+    "slick-carousel": {
+      "main": [
+        "slick/slick.js",
+        "slick/slick.scss",
+        "slick/slick-theme.scss",
+        "slick/fonts/*"
+      ]
+    },
+    "bootstrap": {
+      "main": []
+    }
+  },
+  "devDependencies": {
+    "chai": "~3.2.0",
+    "mocha": "~2.2.5"
+  }
+}

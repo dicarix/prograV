@@ -1,0 +1,110 @@
+.#{$prefix}-m-related {
+  background-color: #0A9646;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  h2 {
+    margin-bottom: 30px;
+  }
+  .sat-shadow {
+    height: 80%;
+  }
+  a {
+    color: $light-primary;
+  }
+  .related-item {
+    position: relative;
+  }
+  .related-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .related-item, .related-image {
+    width: 100%;
+    height: 230px;
+  }
+  .related-content {
+    position: absolute;
+    bottom: 10px;
+    padding: 15px;
+    width: 100%;
+    .category {
+      margin-bottom: 20px;
+    }
+    .share {
+      display: inline;
+      margin-left: 5px;
+      svg {
+        pointer-events: none;
+        vertical-align: middle;
+        width: 12px;
+        height: 12px;
+      }
+      span {
+        @include fontLight;
+        font-size: 13px;
+        line-height: 13px;
+      }
+    }
+    h4 {
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+    .price {
+      color: $brand-primary;
+      font-size: 35px;
+      line-height: 35px;
+      @include fontBold;
+    }
+  }
+
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max)  {
+    .related-item, .related-image {
+      height: 200px;
+    }
+  }
+
+  @include breakpoint('tablet') {
+    .related-item, .related-image {
+      height: 260px;
+    }
+  }
+
+  @include breakpoint('tablet-up') {
+    // Fix Slick Desktop Issue (Was hiding elements when you swipe on mobile and changed to desktop view)
+    .slick-track {
+      -webkit-transform: translate3d(0, 0, 0) !important;
+      transform: translate3d(0, 0, 0) !important;
+    }
+
+    .related-item {
+      overflow: hidden;
+      &:hover {
+        .sat-shadow {
+          height: 120%;
+        }
+        > .related-image {
+          @include imageBlur(5px);
+        }
+      }
+    }
+  }
+
+  @include breakpoint('tablet-down') {
+    padding-bottom: 30px;
+    .related-item {
+      max-width: 280px;
+      margin: 0 auto 20px;
+    }
+  }
+
+  @include breakpoint('phone') {
+    .related-item, .related-image {
+      height: 300px;
+    }
+
+    h2 {
+      font-size: 25px;
+      line-height: 25px;
+    }
+  }
+}

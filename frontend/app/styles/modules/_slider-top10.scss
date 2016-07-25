@@ -1,0 +1,280 @@
+.#{$prefix}-m-slider-top10 {
+  position: absolute;
+  top: 0; right: -45%;
+  width: 45%;
+  background-color: $light-primary;
+  height: 100vh;
+  overflow: auto;
+  @include transition(right 0.5s ease);
+  &.active {
+    width: 45%;
+    right: 0;
+  }
+  .close-slider {
+    position: absolute;
+    top: 0; right: 0;
+    padding: 10px 15px;
+    svg {
+      width: 16px;
+      height: 16px;
+      color: $light-primary;
+      pointer-events: none;
+      vertical-align: middle;
+    }
+  }
+  .s-item-header {
+    background-color: #2350A0;
+    padding: 20px 30px 60px;
+    color: $light-primary;
+    span {
+      @include fontArial;
+      font-size: 12px;
+      line-height: 12px;
+      color: #B1CAF6;
+      margin-bottom: 10px;
+    }
+    h3 {
+      @include fontLight;
+      font-size: 28px;
+      line-height: 28px;
+      margin-bottom: 0;
+    }
+  }
+  .s-item-image {
+    img {
+      width: 100%;
+    }
+    .image-caption {
+      font-size: 15px;
+      line-height: 16px;
+      color: #555555;
+      @include fontItalic;
+      margin-top: 20px;
+      p {
+        margin-bottom: 0;
+      }
+      a {
+        display: inline-block;
+        text-decoration: none;
+        color: #3B73BF;
+        margin-top: 2px;
+        background: url(../images/svg/article-camera.svg);
+        background-repeat: no-repeat;
+        background-position: 0 3px;
+        background-size: 17px 14px;
+        padding-left: 25px;
+        padding-top: 4px;
+        border-bottom: 1px solid #DEDEDE;
+        &:hover {
+          border-bottom: 1px solid #3B73BF;
+        }
+      }
+    }
+  }
+  .s-item-copy {
+    width: 90%;
+    margin: 30px auto 45px;
+    p {
+      @include fontRegular;
+      font-size: 18px;
+      line-height: 27px;
+      color: $dark-primary;
+      margin-bottom: 10px;
+      a {
+        text-decoration: none;
+        border-bottom: 1px solid #DEDEDE;
+        &:hover {
+          border-bottom: 1px solid #3C78BE;
+        }
+      }
+    }
+    .btn-primary {
+      margin-top: 20px;
+    }
+  }
+  .s-item-social {
+    position: relative;
+    overflow: hidden;
+    padding: 0 7px;
+    margin-bottom: 30px;
+    .social-image {
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .social-content {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      color: $light-primary;
+      > * {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      img {
+        max-width: 45px;
+        max-height: 45px;
+        margin-right: 2px;
+      }
+      span {
+        font-size: 10px;
+        line-height: 10px;
+      }
+      svg {
+        vertical-align: middle;
+        pointer-events: none;
+      }
+      .network {
+        width: 18px;
+        height: 18px;
+        display: block;
+      }
+      .arrow {
+        width: 9px;
+        height: 18px;
+        position: absolute;
+        top: 10px; left: 85%;
+      }
+    }
+  }
+  .s-item-stats {
+    border-top: 1px solid #CDCDCD;
+    border-bottom: 1px solid #CDCDCD;
+    overflow: hidden;
+    @include displayFlex;
+    .chart-stats {
+      border-right: 1px solid #CDCDCD;
+    }
+    .chart-stat {
+      padding: 15px 0 10px 20px;
+      border-top: 1px solid #CDCDCD;
+      cursor: pointer;
+      &:first-child {
+        border-top: none;
+      }
+      p {
+        font-size: 11px;
+        line-height: 11px;
+        color: #555555;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        display: inline-block;
+      }
+      span {
+        color: #3C78BE;
+        display: block;
+        margin-top: 8px;
+        @include fontRegular;
+        font-size: 30px;
+        line-height: 30px;
+        text-transform: none;
+      }
+      svg {
+        color: #3C78BE;
+        width: 20px;
+        height: 20px;
+        vertical-align: baseline;
+        pointer-events: none;
+        display: inline-block;
+        margin-right: 10px;
+      }
+      &:hover {
+        span {
+          text-decoration: underline;
+        }
+      }
+      &.active {
+        cursor: default;
+        pointer-events: none;
+        span,
+        svg {
+          color: $dark-primary;
+        }
+        &:hover {
+          span {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  // Font family for all the chart text
+  svg {
+    font-family: Arial !important;
+  }
+
+  @include breakpoint('tablet') {
+    width: 70%;
+    right: -70%;
+    &.active {
+      width: 70%;
+      right: 0;
+    }
+  }
+
+  @include breakpoint('tablet-landscape') {
+    height: 615px;
+  }
+
+  @include breakpoint('tablet-portrait') {
+    height: 70vh;
+  }
+
+  @include breakpoint('phone') {
+    width: 100%;
+    height: auto;
+    position: relative;
+    right: 0;
+    overflow: visible;
+    &.active {
+      width: 100%;
+      right: 0;
+    }
+    .s-item-header {
+      text-align: center;
+      h3 {
+        font-size: 22px;
+        line-height: 22px;
+      }
+    }
+    .s-item-social {
+      padding: 0;
+      padding-bottom: 60px;
+      margin-bottom: 0;
+      .social-image {
+        height: 240px;
+      }
+    }
+    .s-item-stats {
+      display: block;
+      border: none;
+      .chart-stats {
+        @include displayFlex;
+      }
+      .chart-stat {
+        width: 33.333333333%;
+        float: left;
+        border: 1px solid #CDCDCD;
+        padding: 15px;
+        &:first-child {
+          border-top: 1px solid #CDCDCD;
+        }
+        p {
+          font-size: 10px;
+          line-height: 10px;
+        }
+        span {
+          font-size: 25px;
+          line-height: 25px;
+        }
+      }
+      .chart-item {
+        margin-bottom: 50px;
+        padding-top: 10px;
+        height: 220px;
+      }
+    }
+  }
+}

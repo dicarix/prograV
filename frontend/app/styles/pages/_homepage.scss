@@ -1,0 +1,9 @@
+.#{$prefix}-p-homepage {
+  @include breakpoint('tablet-up') {
+    .#{$prefix}-m-slider {
+      .slider-image {
+        position: relative;
+      }
+    }
+  }
+}

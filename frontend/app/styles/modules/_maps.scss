@@ -1,0 +1,146 @@
+.#{$prefix}-m-map {
+
+  .map-labels {
+    @include fontRegular;
+    //text-transform: uppercase;
+    font-size: 12px;
+    color: $dark-primary;
+  }
+  #homepage-map {
+    width: 100%;
+    height: 700px;
+  }
+  #contactMap {
+    width: 100%;
+    height: 400px;
+  }
+  #articleMap {
+    width: 100%;
+    height: 550px;
+  }
+  #exploreMap {
+    position: absolute;
+    top: 0; left: 0;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    .gm-style-mtc {
+      display: none;
+    }
+    .gm-style {
+      > div:first-child {
+        * {
+          pointer-events: none;
+        }
+      }
+    }
+  }
+  #top10Map {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  // Labels Styles
+  .map-labels {
+    font-size: 16px;
+    line-height: 16px;
+    color: #3C78BE;
+    text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white;
+    @include fontBold;
+    width: 300px;
+    text-align: center;
+    pointer-events: none;
+    &.city {
+      font-size: 12px;
+      line-height: 12px;
+      color: #000000;
+    }
+  }
+
+  // Custom markers
+  .gm-style .gm-style-iw {
+    clear: both;
+    width: 100% !important;
+    height: 130px;
+    top: 0 !important;
+    left: 0 !important;
+    > div {
+      max-width: none !important;
+    }
+  }
+  .infowindow-parent {
+    margin-top: 60px;
+    margin-left: -1px;
+  }
+  .gm-style-iw {
+    position: relative;
+    overflow: visible;
+    &:before, &:after {
+      top: 99%;
+      left: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+    &:before {
+      border-color: rgba(230, 230, 230, 0);
+      border-top-color: #e6e6e6;
+      border-width: 16px;
+      margin-left: -16px;
+    }
+    &:after {
+      border-color: rgba(0, 0, 0, 0);
+      border-top-color: #000000;
+      border-width: 15px;
+      margin-left: -15px;
+    }
+  }
+  .markerInfo {
+    position: relative;
+    width: 233px;
+    height: 130px;
+    img {
+      width: 100%;
+      height: 100%;
+      border: 1px solid #E6E6E6;
+    }
+    .markerTextContainer {
+      bottom: 6px;
+      position: absolute;
+      left: 12px;
+      .markerText {
+        font-size: 12px;
+        color: $light-primary;
+        margin: 0;
+        line-height: 16px;
+      }
+    }
+  }
+
+  @include breakpoint('tablet-landscape') {
+    #homepage-map {
+      height: 580px;
+    }
+    #top10Map {
+      height: 615px;
+    }
+  }
+
+  @include breakpoint('tablet-portrait') {
+    #top10Map {
+      height: 70vh;
+    }
+  }
+
+  @include breakpoint('phone') {
+    #articleMap {
+      height: 340px;
+    }
+    #top10Map {
+      height: 50vh;
+    }
+  }
+}

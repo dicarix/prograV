@@ -1,0 +1,119 @@
+// Icons
+// -------------------------
+
+
+// Global Icons
+#share,
+#wishlist-add,
+#wishlist-delete,
+#wishlist-saved {
+  path {
+    fill: currentColor;
+  }
+}
+#close {
+  path {
+    fill: currentColor;
+  }
+}
+
+#trip-advisor {
+  path {
+    fill: $gray-primary;
+  }
+}
+
+// Social Icons
+#social-facebook,
+#social-flickr,
+#social-google,
+#social-instagram,
+#social-pinterest,
+#social-twitter,
+#social-youtube {
+  path {
+    fill: currentColor;
+  }
+}
+
+// Nav Icons
+#nav-close,
+#nav-explore,
+#nav-menu,
+#nav-search,
+#nav-wishlist {
+  path {
+    fill: $dark-primary;
+  }
+}
+#nav-whattodo,
+#nav-whentovisit,
+#nav-wheretogo,
+#nav-whichprice,
+#nav-whowith {
+  path {
+    fill: #555555;
+  }
+}
+#nav-arrow,
+#nav-arrow-close {
+  path {
+    fill: currentColor;
+  }
+}
+
+// Explore Icons
+#explore-what,
+#explore-when,
+#explore-where,
+#explore-which,
+#explore-who {
+  path {
+    fill: currentColor;
+  }
+}
+
+// Map Icons
+#map-arrow-left,
+#map-arrow-right {
+  path {
+    fill: currentColor;
+  }
+}
+
+// Chart Icons
+#chart-rainfall,
+#chart-sun,
+#chart-thermostat {
+  path {
+    fill: currentColor;
+  }
+}
+
+// Slider Icons
+#slider-camera,
+#slider-location,
+#slider-sun,
+#slider-tags,
+#slider-temperature {
+  path {
+    fill: $light-primary;
+  }
+}
+
+// Article Icons
+#article-accomodation,
+#article-events,
+#article-food,
+#article-tours,
+#article-travel,
+#article-visit {
+  path {
+    fill: $light-primary;
+  }
+}
+#article-source {
+  path {
+    fill: #3B73BF;
+  }
+}

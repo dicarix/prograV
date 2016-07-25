@@ -1,0 +1,188 @@
+$accordion-bg-color: #EEEEEE;
+
+.#{$prefix}-m-accordion {
+  background-color: $accordion-bg-color;
+  color: $dark-primary;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 40px 0;
+
+  // reset accordion styles
+  .panel-group {
+    margin-bottom: 0;
+    .panel, .panel-heading, .panel-body {
+      border: 0;
+      border-radius: 0;
+      margin: 0;
+    }
+  }
+
+  .panel-group {
+    .panel-heading {
+      border: 1px solid $accordion-bg-color;
+      padding: 0;
+      overflow: hidden;
+      cursor: pointer;
+      h4 {
+        float: left;
+        padding: 15px 20px 10px;
+        min-height: 50px;
+      }
+    }
+
+    .panel-title {
+      color: $light-primary;
+      width: 40%;
+      span {
+        @include fontRegular;
+        font-size: 16px;
+        line-height: 18px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      svg {
+        width: 22px;
+        height: 22px;
+        vertical-align: middle;
+        margin-right: 15px;
+      }
+    }
+
+    .panel-description {
+      position: relative;
+      background-color: $light-primary;
+      color: #555555;
+      margin-bottom: 0;
+      width: 60%;
+      span {
+        @include fontItalic;
+        font-size: 14px;
+        line-height: 16px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+
+    .nav-caret {
+      color: #4F4F4F;
+      position: absolute;
+      top: 12px;
+      right: 15px;
+      svg {
+        width: 9px;
+        height: 5px;
+      }
+    }
+
+    .panel-heading {
+      .panel-title {
+        background-color: #3B73BF;
+        @include transition(background-color 0.8s ease);
+      }
+      .caret-open {
+        display: none;
+      }
+      .caret-close {
+        display: block;
+      }
+      &.collapsed {
+        .panel-title {
+          background-color: #2350A0;
+        }
+        .caret-open {
+          display: block;
+        }
+        .caret-close {
+          display: none;
+        }
+      }
+    }
+
+    .panel-body {
+      border-top: none !important;
+      border-bottom: 1px solid $accordion-bg-color;
+      h5 {
+        @include fontRegular;
+        color: #555555;
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 5px;
+      }
+      p {
+        color: #555555;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0;
+      }
+    }
+  }
+
+  @include breakpoint('phone') {
+    .panel-group {
+      .panel-title {
+        width: -moz-calc(100% - 40px);
+        width: -webkit-calc(100% - 40px);
+        width: calc(100% - 40px);
+      }
+      .panel-description {
+        width: 40px;
+      }
+    }
+  }
+
+  &.#{$prefix}-is-contact {
+    background-color: $light-primary;
+    .panel-group {
+      .panel-description {
+        span,p,a{
+          @include fontRegular;
+          font-size: 16px;
+          line-height: 0.1;
+        }
+      }
+
+    }
+    .panel-heading {
+      display: flex;
+      cursor: auto;
+      .panel-title {
+        background-color: #2350A0;
+      }
+      .caret-open,.caret-close  {
+        display: none;
+      }
+      &.collapsed {
+        .panel-title {
+          background-color: #2350A0;
+        }
+        .caret-open,.caret-close {
+          display: none;
+        }
+      }
+    }
+    .collapse.in,.collapsing{
+      display: none;
+    }
+    @include breakpoint('phone') {
+      .panel-heading {
+        .caret-open {
+          display: none;
+        }
+        .caret-close {
+          display: block;
+        }
+        &.collapsed {
+          .caret-open {
+            display: block;
+          }
+          .caret-close {
+            display: none;
+          }
+        }
+      }
+      .collapse.in,.collapsing{
+        display: block;
+      }
+    }
+  }
+}

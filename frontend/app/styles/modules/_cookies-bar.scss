@@ -1,0 +1,32 @@
+.#{$prefix}-m-cookies-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: #000000;
+  padding: 20px;
+  display: none;
+  p {
+    font-size: 13px;
+    line-height: 15px;
+    color: #CCCCCC;
+    display: inline-block;
+    margin: 15px 20px;
+  }
+  a {
+    text-decoration: underline;
+    color: #CCCCCC;
+  }
+
+  @include breakpoint('phone-up') {
+    p {
+      .js-cookiebar {
+        display: none;
+      }
+    }
+  }
+
+  @include breakpoint('phone') {
+    padding: 5px;
+  }
+}

@@ -1,0 +1,128 @@
+[
+  {
+    "latitude": -32.060012,
+    "longitude": 26.572656,
+    "label": "Eastern Cape",
+    "labelAnchorY": 42,
+    "type": "province"
+  },
+  {
+    "latitude": -28.460273,
+    "longitude": 26.843538,
+    "label": "Free State",
+    "labelAnchorY": 42,
+    "type": "province"
+  },
+  {
+    "latitude": -26.207070,
+    "longitude": 27.980609,
+    "label": "Gauteng",
+    "labelAnchorY": 42,
+    "type": "province"
+  },
+  {
+    "latitude": -28.357412,
+    "longitude": 31.044432,
+    "label": "KwaZulu-Natal",
+    "labelAnchorY": 42,
+    "type": "province"
+  },
+  {
+    "latitude": -24.498396,
+    "longitude": 29.538364,
+    "label": "Limpopo",
+    "labelAnchorY": 42,
+    "type": "province"
+  },
+  {
+    "latitude": -26.548432,
+    "longitude": 29.987280,
+    "label": "Mpumalanga",
+    "labelAnchorY": 42,
+    "type": "province"
+  },
+  {
+    "latitude": -26.596571,
+    "longitude": 25.615925,
+    "label": "North West",
+    "labelAnchorY": 42,
+    "type": "province"
+  },
+  {
+    "latitude": -30.120213,
+    "longitude": 21.758536,
+    "label": "Northern Cape",
+    "labelAnchorY": 42,
+    "type": "province"
+  },
+  {
+    "latitude": -34.120775,
+    "longitude": 20.395644,
+    "label": "Western Cape",
+    "labelAnchorY": 42,
+    "type": "province"
+  },
+  {
+    "latitude": -23.9000,
+    "longitude": 29.4500,
+    "label": "Polokwane",
+    "labelAnchorY": 42,
+    "type": "city"
+  },
+  {
+    "latitude": -25.4658,
+    "longitude": 30.9853,
+    "label": "Mbombela (Nelspruit)",
+    "labelAnchorY": 42,
+    "type": "city"
+  },
+  {
+    "latitude": -25.7461,
+    "longitude": 28.1881,
+    "label": "Pretoria",
+    "labelAnchorY": 42,
+    "type": "city"
+  },
+  {
+    "latitude": -26.2044,
+    "longitude": 28.0456,
+    "label": "Johannesburg",
+    "labelAnchorY": 8,
+    "type": "city"
+  },
+  {
+    "latitude": -29.8833,
+    "longitude": 31.0500,
+    "label": "Durban",
+    "labelAnchorY": 42,
+    "type": "city"
+  },
+  {
+    "latitude": -28.7419,
+    "longitude": 24.7719,
+    "label": "Kimberly",
+    "labelAnchorY": 42,
+    "type": "city"
+  },
+  {
+    "latitude": -29.1167,
+    "longitude": 26.2167,
+    "label": "Bloemfontein",
+    "labelAnchorY": 42,
+    "type": "city"
+  },
+  {
+    "latitude": -33.9581,
+    "longitude": 25.6000,
+    "label": "Port Elizabeth",
+    "labelAnchorY": 42,
+    "type": "city"
+  },
+  {
+    "latitude": -33.9253,
+    "longitude": 18.4239,
+    "label": "Cape Town",
+    "labelAnchorY": 42,
+    "type": "city"
+  }
+]

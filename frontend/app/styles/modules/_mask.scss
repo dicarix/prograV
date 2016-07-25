@@ -1,0 +1,16 @@
+.#{$prefix}-m-mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  @include transition(all 1s ease);
+  &.in {
+    @include transition(all 1s ease);
+    z-index: 998;
+    background-color: #000;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+  }
+}

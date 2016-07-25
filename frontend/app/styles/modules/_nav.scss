@@ -1,0 +1,332 @@
+// Variables
+$nav-mobile-height: 60px;
+$nav-desktop-wh: 93px;
+$nav-sidebar-desktop-width: 300px;
+$nav-search-mobile-height: 52px;
+$nav-search-desktop-width: 400px;
+$nav-wishlist-desktop-width: 285px;
+
+.#{$prefix}-m-nav {
+  position: fixed;
+  top: 0; left: 0;
+  z-index: 1000;
+  background-color: $light-primary;
+  width: 100%;
+  height: $nav-mobile-height;
+
+  .nav-item {
+    width: 25%;
+    height: $nav-mobile-height;
+    float: left;
+    @include sat-gradient($light-primary, #F2F3F2);
+    border-right: 1px dotted $gray-dark;
+    &:last-child {
+      border-right: 0;
+    }
+    &.active {
+      background: $brand-primary;
+    }
+
+    > a {
+      width: 100%;
+      height: 100%;
+      display: block;
+      padding-top: 15px;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    > .dropdown-menu {
+      position: fixed;
+      top: 0;
+      overflow-y: auto;
+      border: 0;
+      border-top: 1px solid $gray-primary;
+      border-radius: 0;
+      box-shadow: none;
+      padding: 0;
+    }
+
+    .nav-icon {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .nav-menu-icon { width: 20px; height: 14px; }
+    .nav-search-icon { width: 20px; height: 20px; }
+    .nav-wishlist-icon { width: 19px; height: 17px; }
+    .nav-explore-icon { width: 20px; height: 23px; }
+    .nav-close-icon { width: 20px; height: 20px; }
+
+    .nav-text {
+      display: block;
+      font-size: 10px;
+      line-height: 10px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    a, a:hover, a:focus {
+      color: $dark-primary;
+    }
+  }
+
+  .nav-dropdown-menu {
+    height: 100%;
+    padding-bottom: 65px;
+    margin: $nav-mobile-height 0 0 -1px;
+    width: 50%;
+    background-color: $gray-base;
+    border: 1px solid $gray-light;
+
+    .nav-dropdown-item {
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      a {
+        @include fontRegular;
+        background-color: $light-primary;
+        padding: 15px 20px;
+        font-size: 18px;
+        line-height: 20px;
+      }
+      img {
+        margin-right: 12px;
+      }
+    }
+
+    .dropdown-menu {
+      padding: 0;
+      border: 0;
+      box-shadow: none;
+      margin: 0;
+      width: 100%;
+      position: static;
+      &.open {
+        display: block !important;
+      }
+    }
+
+    .nav-internal-links {
+      background-color: $gray-light;
+      padding: 20px 25px 50px;
+      li a {
+        @include fontRegular;
+        color: $link-color;
+        padding: 10px 25px;
+        background-color: $gray-light;
+        border-bottom: 1px dotted $gray-dark;
+        position: relative;
+        &:hover {
+          background-color: darken($gray-light, 3%);
+        }
+      }
+      .nav-internal-dropdown > a {
+        color: $gray-dark;
+        padding: 10px;
+        padding-right: 25px;
+      }
+      .nav-caret {
+        top: 7px;
+      }
+    }
+  }
+
+  .nav-dropdown-search {
+    width: 100%;
+    margin-top: $nav-mobile-height;
+    .form-group, .input-group {
+      width: 100%;
+    }
+    .form-group {
+      margin-bottom: 0;
+    }
+    .form-control {
+      @include fontRegular;
+      height: $nav-search-mobile-height;
+      font-size: 15px;
+      color: $dark-primary;
+      &::-webkit-input-placeholder {
+         color: $gray-dark;
+      }
+
+      &:-moz-placeholder {
+         color: $gray-dark;
+      }
+
+      &::-moz-placeholder {
+         color: $gray-dark;
+      }
+
+      &:-ms-input-placeholder {
+         color: $gray-dark;
+      }
+    }
+    .input-group * {
+      border: 0;
+      box-shadow: none;
+      .nav-icon {
+        margin: 0 auto;
+      }
+    }
+    .input-group-addon {
+      &:first-child {
+        background-color: transparent;
+      }
+    }
+    .search-submit {
+      width: 25%;
+      padding: 0;
+      border-left: 1px dotted $gray-dark;
+      button {
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        @include sat-gradient($light-primary, #F2F3F2);
+        color: $dark-primary;
+      }
+    }
+  }
+
+  .nav-dropdown-wishlist {
+    width: 100%;
+    margin-top: $nav-mobile-height;
+    li {
+      @include fontRegular;
+      padding: 17px 20px;
+      color: $dark-primary;
+      font-size: 15px;
+      line-height: 18px;
+    }
+  }
+
+  .nav-image {
+    display: none;
+  }
+
+  .nav-caret {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    color: #505050;
+    svg {
+      width: 9px;
+      height: 5px;
+    }
+  }
+
+  .divider {
+    margin: 0;
+    background-color: $gray-primary;
+  }
+
+  // Desktop and Tablet Landscape
+  @include breakpoint('tablet-landscape-up') {
+    width: $nav-desktop-wh;
+    height: auto;
+    background-color: $gray-base;
+    &.nav-open {
+      height: 100%;
+    }
+
+    .nav-item {
+      width: 100%;
+      height: $nav-desktop-wh;
+      background-color: $light-primary;
+      border-bottom: 1px dotted $gray-dark;
+      border-right: 0;
+      > a {
+        padding-top: 28px;
+      }
+    }
+
+    .nav-dropdown-menu {
+      width: $nav-sidebar-desktop-width;
+      background-color: $light-primary;
+      margin: 0 0 0 $nav-desktop-wh;
+      .nav-dropdown-item {
+        a {
+          padding: 35.5px 20px;
+          &:hover {
+            background-color: $gray-base;
+          }
+          &.nav-dropdown-image {
+            padding: 0;
+          }
+        }
+      }
+    }
+
+    .nav-dropdown-search {
+      width: $nav-search-desktop-width;
+      margin: $nav-desktop-wh 0 0 $nav-desktop-wh;
+      li {
+        padding: 25px;
+      }
+      .form-control {
+        height: $nav-desktop-wh - 52;
+      }
+      .input-group {
+        border: 1px solid #BDBDBD;
+      }
+      .input-group-addon {
+        width: 50px;
+      }
+      .search-submit {
+        border-left: 1px solid #BDBDBD;
+      }
+    }
+
+    .nav-dropdown-wishlist {
+      width: $nav-wishlist-desktop-width;
+      margin: $nav-desktop-wh * 2 0 0 $nav-desktop-wh;
+      li {
+        padding: 37px 20px;
+        line-height: 17px;
+      }
+    }
+
+    .nav-desktop-image {
+      display: inline;
+    }
+
+    .nav-caret {
+      top: 32px;
+    }
+  }
+
+  // Mobile and Tablet Portrait
+  @include breakpoint('tablet-portrait-down') {
+    z-index: 9999;
+    .nav-mobile-image {
+      display: inline;
+      width: 22px;
+      height: 22px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+    .nav-dropdown-search {
+      .search-submit {
+        width: 25.2%;
+      }
+    }
+  }
+
+  @include breakpoint('phone') {
+    .nav-dropdown-menu {
+      width: 75%;
+    }
+    .nav-dropdown-search {
+      .search-submit {
+        width: 25.5%;
+      }
+    }
+  }
+}
+
+// Mobile and Tablet Portrait
+@include breakpoint('tablet-portrait-down') {
+  body {
+    margin-top: $nav-mobile-height;
+  }
+}

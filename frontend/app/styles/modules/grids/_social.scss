@@ -1,0 +1,144 @@
+.#{$prefix}-m-social {
+  background-color: #232323;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  min-height: 302px;
+  h2 {
+    margin-bottom: 30px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 18px;
+    @include fontLight;
+  }
+  .social-layer,
+  .social-image {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include transition(all 0.3s ease-in-out);
+    &.has-image {
+      opacity: 0.7;
+    }
+  }
+  .social-item {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 215px;
+    overflow: hidden;
+    a {
+      color: $light-primary;
+    }
+    &.facebook {
+      .social-layer {
+        background-color: #3B5998;
+      }
+    }
+    &.twitter {
+      .social-layer {
+        background-color: #0A89D2;
+      }
+    }
+    &.flickr {
+      .social-layer {
+        background-color: #E30E7C;
+      }
+    }
+    &.pinterest {
+      .social-layer {
+        background-color: #C8242B;
+      }
+    }
+    &.instagram {
+      .social-layer {
+        background-color: #558AB4;
+      }
+    }
+  }
+  .social-content {
+    position: absolute;
+    bottom: 0;
+    padding: 15px 12px;
+    width: 100%;
+    height: 100%;
+    .category {
+      &.social {
+        margin-bottom: 15px;
+        svg, span {
+          display: inline-block;
+        }
+        svg {
+          width: 22px;
+          height: 24px;
+          vertical-align: top;
+        }
+        span {
+          font-weight: bold;
+          text-transform: uppercase;
+          vertical-align: middle;
+          font-size: 10px;
+          line-height: 12px;
+          width: 100%;
+          max-width: 74%;
+          text-align: right;
+        }
+      }
+
+      &.share {
+        position: absolute;
+        left:10px; bottom: 8px;
+        svg {
+          vertical-align: middle;
+          width: 12px;
+          height: 12px;
+        }
+        span {
+          @include fontLight;
+          font-size: 12px;
+          line-height: 12px;
+        }
+      }
+    }
+    .box {
+      display: inline;
+      margin-left: 5px;
+      svg {
+        pointer-events: none;
+      }
+    }
+  }
+
+  @include breakpoint('tablet-up') {
+    // Fix Slick Desktop Issue (Was hiding elements when you swipe on mobile and changed to desktop view)
+    .slick-track {
+      -webkit-transform: translate3d(0, 0, 0) !important;
+      transform: translate3d(0, 0, 0) !important;
+    }
+
+    .social-item {
+      &:hover {
+        .social-image {
+          @include imageBlur(3px);
+        }
+      }
+    }
+
+  }
+
+  @include breakpoint('tablet') {
+    .social-item {
+      height: 270px;
+    }
+  }
+
+  @include breakpoint('tablet-down') {
+    padding-bottom: 30px;
+    .social-item {
+      display: block;
+    }
+  }
+}

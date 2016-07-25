@@ -1,0 +1,32 @@
+.#{$prefix}-m-logo {
+  z-index: 3;
+  width: 100%;
+  text-align: center;
+  svg {
+    margin: 0 auto;
+  }
+
+  // Desktop and Tablet Landscape
+  @include breakpoint('tablet-landscape-up') {
+    position: fixed;
+    top: 30px;
+    svg {
+      width: 103px;
+      height: 52px;
+    }
+  }
+
+  // Mobile and Tablet Portrait
+  @include breakpoint('tablet-portrait-down') {
+    position: absolute;
+    top: $nav-mobile-height + 30;
+    svg {
+      width: 121px;
+      height: 64px;
+    }
+  }
+
+  @include breakpoint('tablet-down') {
+    position: absolute;
+  }
+}

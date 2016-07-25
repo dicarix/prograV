@@ -1,0 +1,54 @@
+//
+// Typography
+// --------------------------------------------------
+
+//== Typography Vars
+$font-regular:    "MundoSansStd";
+$font-light:      "MundoSansStd-Light";
+$font-italic:     "MundoSansStd-Italic";
+$font-bold:       "MundoSansStd-Bold";
+$font-url:        "../fonts";
+
+/* @import must be at top of file, otherwise CSS will not work */
+// @import url("//hello.myfonts.net/count/2f3039");
+
+@font-face {
+  font-family: 'MundoSansStd';
+  src: url('#{$font-url}/#{$font-regular}.eot');
+  src: url('#{$font-url}/#{$font-regular}.eot?#iefix') format('embedded-opentype'),
+       url('#{$font-url}/#{$font-regular}.woff2') format('woff2'),
+       url('#{$font-url}/#{$font-regular}.woff') format('woff'),
+       url('#{$font-url}/#{$font-regular}.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MundoSansStd-Light';
+  src: url('#{$font-url}/#{$font-light}.eot');
+  src: url('#{$font-url}/#{$font-light}.eot?#iefix') format('embedded-opentype'),
+       url('#{$font-url}/#{$font-light}.woff2') format('woff2'),
+       url('#{$font-url}/#{$font-light}.woff') format('woff'),
+       url('#{$font-url}/#{$font-light}.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MundoSansStd-Italic';
+  src: url('#{$font-url}/#{$font-italic}.eot');
+  src: url('#{$font-url}/#{$font-italic}.eot?#iefix') format('embedded-opentype'),
+       url('#{$font-url}/#{$font-italic}.woff2') format('woff2'),
+       url('#{$font-url}/#{$font-italic}.woff') format('woff'),
+       url('#{$font-url}/#{$font-italic}.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MundoSansStd-Bold';
+  src: url('#{$font-url}/#{$font-bold}.eot');
+  src: url('#{$font-url}/#{$font-bold}.eot?#iefix') format('embedded-opentype'),
+       url('#{$font-url}/#{$font-bold}.woff2') format('woff2'),
+       url('#{$font-url}/#{$font-bold}.woff') format('woff'),
+       url('#{$font-url}/#{$font-bold}.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

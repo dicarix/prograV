@@ -1,0 +1,974 @@
+[
+  {
+    "hs-type": "temperature",
+    "hs-position": 1,
+    "title": {
+      "text": "Avg. Temperatures (°c)",
+      "style": {
+        "color": "#333333",
+        "fontWeight": "bold",
+        "fontSize": "10px",
+        "textTransform": "uppercase"
+      }
+    },
+    "tooltip": {
+      "pointFormat": "<b>{point.y:.1f}°C</b>",
+      "borderColor": "#E6E6E6",
+      "backgroundColor": "#FAFAFA"
+    },
+    "series": [{
+      "name": "Temperatures",
+      "data": [
+        ["January",   25.0],
+        ["February",  23.0],
+        ["March",     21.0],
+        ["April",     19.0],
+        ["May",       17.0],
+        ["June",      15.0],
+        ["July",      15.0],
+        ["August",    17.0],
+        ["September", 19.0],
+        ["October",   21.0],
+        ["November",  23.0],
+        ["December",  25.0]
+      ],
+      "color": "#2350A0"
+    }]
+  },
+  {
+    "hs-type": "precipitation",
+    "hs-position": 1,
+    "title": {
+      "text": "Avg. Precipitations (mm)",
+      "style": {
+        "color": "#333333",
+        "fontWeight": "bold",
+        "fontSize": "10px",
+        "textTransform": "uppercase"
+      }
+    },
+    "tooltip": {
+      "pointFormat": "<b>{point.y:.1f} mm</b>",
+      "borderColor": "#E6E6E6",
+      "backgroundColor": "#FAFAFA"
+    },
+    "series": [{
+      "name": "Precipitations",
+      "data": [
+        ["January",   25.0],
+        ["February",  23.0],
+        ["March",     21.0],
+        ["April",     19.0],
+        ["May",       17.0],
+        ["June",      15.0],
+        ["July",      15.0],
+        ["August",    17.0],
+        ["September", 19.0],
+        ["October",   21.0],
+        ["November",  23.0],
+        ["December",  25.0]
+      ],
+      "color": "#2350A0"
+    }]
+  },
+  {
+    "hs-type": "sunhours",
+    "hs-position": 1,
+    "title": {
+      "text": "Avg. Hours Of Sun (hrs)",
+      "style": {
+        "color": "#333333",
+        "fontWeight": "bold",
+        "fontSize": "10px",
+        "textTransform": "uppercase"
+      }
+    },
+    "tooltip": {
+      "pointFormat": "<b>{point.y:.1f} hrs</b>",
+      "borderColor": "#E6E6E6",
+      "backgroundColor": "#FAFAFA"
+    },
+    "series": [{
+      "name": "Hours Of Sun",
+      "data": [
+        ["January",   25.0],
+        ["February",  23.0],
+        ["March",     21.0],
+        ["April",     19.0],
+        ["May",       17.0],
+        ["June",      15.0],
+        ["July",      15.0],
+        ["August",    17.0],
+        ["September", 19.0],
+        ["October",   21.0],
+        ["November",  23.0],
+        ["December",  25.0]
+      ],
+      "color": "#2350A0"
+    }]
+  },
+  {
+    "hs-type": "temperature",
+    "hs-position": 2,
+    "title": {
+      "text": "Avg. Temperatures (°c)",
+      "style": {
+        "color": "#333333",
+        "fontWeight": "bold",
+        "fontSize": "10px",
+        "textTransform": "uppercase"
+      }
+    },
+    "tooltip": {
+      "pointFormat": "<b>{point.y:.1f}°C</b>",
+      "borderColor": "#E6E6E6",
+      "backgroundColor": "#FAFAFA"
+    },
+    "series": [{
+      "name": "Temperatures",
+      "data": [
+        ["January",   25.0],
+        ["February",  23.0],
+        ["March",     21.0],
+        ["April",     19.0],
+        ["May",       17.0],
+        ["June",      15.0],
+        ["July",      15.0],
+        ["August",    17.0],
+        ["September", 19.0],
+        ["October",   21.0],
+        ["November",  23.0],
+        ["December",  25.0]
+      ],
+      "color": "#2350A0"
+    }]
+  },
+  {
+    "hs-type": "precipitation",
+    "hs-position": 2,
+    "title": {
+      "text": "Avg. Precipitations (mm)",
+      "style": {
+        "color": "#333333",
+        "fontWeight": "bold",
+        "fontSize": "10px",
+        "textTransform": "uppercase"
+      }
+    },
+    "tooltip": {
+      "pointFormat": "<b>{point.y:.1f} mm</b>",
+      "borderColor": "#E6E6E6",
+      "backgroundColor": "#FAFAFA"
+    },
+    "series": [{
+      "name": "Precipitations",
+      "data": [
+        ["January",   25.0],
+        ["February",  23.0],
+        ["March",     21.0],
+        ["April",     19.0],
+        ["May",       17.0],
+        ["June",      15.0],
+        ["July",      15.0],
+        ["August",    17.0],
+        ["September", 19.0],
+        ["October",   21.0],
+        ["November",  23.0],
+        ["December",  25.0]
+      ],
+      "color": "#2350A0"
+    }]
+  },
+  {
+    "hs-type": "sunhours",
+    "hs-position": 2,
+    "title": {
+      "text": "Avg. Hours Of Sun (hrs)",
+      "style": {
+        "color": "#333333",
+        "fontWeight": "bold",
+        "fontSize": "10px",
+        "textTransform": "uppercase"
+      }
+    },
+    "tooltip": {
+      "pointFormat": "<b>{point.y:.1f} hrs</b>",
+      "borderColor": "#E6E6E6",
+      "backgroundColor": "#FAFAFA"
+    },
+    "series": [{
+      "name": "Hours Of Sun",
+      "data": [
+        ["January",   25.0],
+        ["February",  23.0],
+        ["March",     21.0],
+        ["April",     19.0],
+        ["May",       17.0],
+        ["June",      15.0],
+        ["July",      15.0],
+        ["August",    17.0],
+        ["September", 19.0],
+        ["October",   21.0],
+        ["November",  23.0],
+        ["December",  25.0]
+      ],
+      "color": "#2350A0"
+    }]
+  },
+  {
+    "hs-type": "temperature",
+    "hs-position": 3,
+    "title": {
+      "text": "Avg. Temperatures (°c)",
+      "style": {
+        "color": "#333333",
+        "fontWeight": "bold",
+        "fontSize": "10px",
+        "textTransform": "uppercase"
+      }
+    },
+    "tooltip": {
+      "pointFormat": "<b>{point.y:.1f}°C</b>",
+      "borderColor": "#E6E6E6",
+      "backgroundColor": "#FAFAFA"
+    },
+    "series": [{
+      "name": "Temperatures",
+      "data": [
+        ["January",   25.0],
+        ["February",  23.0],
+        ["March",     21.0],
+        ["April",     19.0],
+        ["May",       17.0],
+        ["June",      15.0],
+        ["July",      15.0],
+        ["August",    17.0],
+        ["September", 19.0],
+        ["October",   21.0],
+        ["November",  23.0],
+        ["December",  25.0]
+      ],
+      "color": "#2350A0"
+    }]
+  },
+  {
+    "hs-type": "precipitation",
+    "hs-position": 3,
+    "title": {
+      "text": "Avg. Precipitations (mm)",
+      "style": {
+        "color": "#333333",
+        "fontWeight": "bold",
+        "fontSize": "10px",
+        "textTransform": "uppercase"
+      }
+    },
+    "tooltip": {
+      "pointFormat": "<b>{point.y:.1f} mm</b>",
+      "borderColor": "#E6E6E6",
+      "backgroundColor": "#FAFAFA"
+    },
+    "series": [{
+      "name": "Precipitations",
+      "data": [
+        ["January",   25.0],
+        ["February",  23.0],
+        ["March",     21.0],
+        ["April",     19.0],
+        ["May",       17.0],
+        ["June",      15.0],
+        ["July",      15.0],
+        ["August",    17.0],
+        ["September", 19.0],
+        ["October",   21.0],
+        ["November",  23.0],
+        ["December",  25.0]
+      ],
+      "color": "#2350A0"
+    }]
+  },
+  {
+    "hs-type": "sunhours",
+    "hs-position": 3,
+    "title": {
+      "text": "Avg. Hours Of Sun (hrs)",
+      "style": {
+        "color": "#333333",
+        "fontWeight": "bold",
+        "fontSize": "10px",
+        "textTransform": "uppercase"
+      }
+    },
+    "tooltip": {
+      "pointFormat": "<b>{point.y:.1f} hrs</b>",
+      "borderColor": "#E6E6E6",
+      "backgroundColor": "#FAFAFA"
+    },
+    "series": [{
+      "name": "Hours Of Sun",
+      "data": [
+        ["January",   25.0],
+        ["February",  23.0],
+        ["March",     21.0],
+        ["April",     19.0],
+        ["May",       17.0],
+        ["June",      15.0],
+        ["July",      15.0],
+        ["August",    17.0],
+        ["September", 19.0],
+        ["October",   21.0],
+        ["November",  23.0],
+        ["December",  25.0]
+      ],
+      "color": "#2350A0"
+    }]
+  },
+  {
+    "hs-type": "temperature",
+    "hs-position": 4,
+    "title": {
+      "text": "Avg. Temperatures (°c)",
+      "style": {
+        "color": "#333333",
+        "fontWeight": "bold",
+        "fontSize": "10px",
+        "textTransform": "uppercase"
+      }
+    },
+    "tooltip": {
+      "pointFormat": "<b>{point.y:.1f}°C</b>",
+      "borderColor": "#E6E6E6",
+      "backgroundColor": "#FAFAFA"
+    },
+    "series": [{
+      "name": "Temperatures",
+      "data": [
+        ["January",   25.0],
+        ["February",  23.0],
+        ["March",     21.0],
+        ["April",     19.0],
+        ["May",       17.0],
+        ["June",      15.0],
+        ["July",      15.0],
+        ["August",    17.0],
+        ["September", 19.0],
+        ["October",   21.0],
+        ["November",  23.0],
+        ["December",  25.0]
+      ],
+      "color": "#2350A0"
+    }]
+  },
+  {
+    "hs-type": "precipitation",
+    "hs-position": 4,
+    "title": {
+      "text": "Avg. Precipitations (mm)",
+      "style": {
+        "color": "#333333",
+        "fontWeight": "bold",
+        "fontSize": "10px",
+        "textTransform": "uppercase"
+      }
+    },
+    "tooltip": {
+      "pointFormat": "<b>{point.y:.1f} mm</b>",
+      "borderColor": "#E6E6E6",
+      "backgroundColor": "#FAFAFA"
+    },
+    "series": [{
+      "name": "Precipitations",
+      "data": [
+        ["January",   25.0],
+        ["February",  23.0],
+        ["March",     21.0],
+        ["April",     19.0],
+        ["May",       17.0],
+        ["June",      15.0],
+        ["July",      15.0],
+        ["August",    17.0],
+        ["September", 19.0],
+        ["October",   21.0],
+        ["November",  23.0],
+        ["December",  25.0]
+      ],
+      "color": "#2350A0"
+    }]
+  },
+  {
+    "hs-type": "sunhours",
+    "hs-position": 4,
+    "title": {
+      "text": "Avg. Hours Of Sun (hrs)",
+      "style": {
+        "color": "#333333",
+        "fontWeight": "bold",
+        "fontSize": "10px",
+        "textTransform": "uppercase"
+      }
+    },
+    "tooltip": {
+      "pointFormat": "<b>{point.y:.1f} hrs</b>",
+      "borderColor": "#E6E6E6",
+      "backgroundColor": "#FAFAFA"
+    },
+    "series": [{
+      "name": "Hours Of Sun",
+      "data": [
+        ["January",   25.0],
+        ["February",  23.0],
+        ["March",     21.0],
+        ["April",     19.0],
+        ["May",       17.0],
+        ["June",      15.0],
+        ["July",      15.0],
+        ["August",    17.0],
+        ["September", 19.0],
+        ["October",   21.0],
+        ["November",  23.0],
+        ["December",  25.0]
+      ],
+      "color": "#2350A0"
+    }]
+  },
+  {
+    "hs-type": "temperature",
+    "hs-position": 5,
+    "title": {
+      "text": "Avg. Temperatures (°c)",
+      "style": {
+        "color": "#333333",
+        "fontWeight": "bold",
+        "fontSize": "10px",
+        "textTransform": "uppercase"
+      }
+    },
+    "tooltip": {
+      "pointFormat": "<b>{point.y:.1f}°C</b>",
+      "borderColor": "#E6E6E6",
+      "backgroundColor": "#FAFAFA"
+    },
+    "series": [{
+      "name": "Temperatures",
+      "data": [
+        ["January",   25.0],
+        ["February",  23.0],
+        ["March",     21.0],
+        ["April",     19.0],
+        ["May",       17.0],
+        ["June",      15.0],
+        ["July",      15.0],
+        ["August",    17.0],
+        ["September", 19.0],
+        ["October",   21.0],
+        ["November",  23.0],
+        ["December",  25.0]
+      ],
+      "color": "#2350A0"
+    }]
+  },
+  {
+    "hs-type": "precipitation",
+    "hs-position": 5,
+    "title": {
+      "text": "Avg. Precipitations (mm)",
+      "style": {
+        "color": "#333333",
+        "fontWeight": "bold",
+        "fontSize": "10px",
+        "textTransform": "uppercase"
+      }
+    },
+    "tooltip": {
+      "pointFormat": "<b>{point.y:.1f} mm</b>",
+      "borderColor": "#E6E6E6",
+      "backgroundColor": "#FAFAFA"
+    },
+    "series": [{
+      "name": "Precipitations",
+      "data": [
+        ["January",   25.0],
+        ["February",  23.0],
+        ["March",     21.0],
+        ["April",     19.0],
+        ["May",       17.0],
+        ["June",      15.0],
+        ["July",      15.0],
+        ["August",    17.0],
+        ["September", 19.0],
+        ["October",   21.0],
+        ["November",  23.0],
+        ["December",  25.0]
+      ],
+      "color": "#2350A0"
+    }]
+  },
+  {
+    "hs-type": "sunhours",
+    "hs-position": 5,
+    "title": {
+      "text": "Avg. Hours Of Sun (hrs)",
+      "style": {
+        "color": "#333333",
+        "fontWeight": "bold",
+        "fontSize": "10px",
+        "textTransform": "uppercase"
+      }
+    },
+    "tooltip": {
+      "pointFormat": "<b>{point.y:.1f} hrs</b>",
+      "borderColor": "#E6E6E6",
+      "backgroundColor": "#FAFAFA"
+    },
+    "series": [{
+      "name": "Hours Of Sun",
+      "data": [
+        ["January",   25.0],
+        ["February",  23.0],
+        ["March",     21.0],
+        ["April",     19.0],
+        ["May",       17.0],
+        ["June",      15.0],
+        ["July",      15.0],
+        ["August",    17.0],
+        ["September", 19.0],
+        ["October",   21.0],
+        ["November",  23.0],
+        ["December",  25.0]
+      ],
+      "color": "#2350A0"
+    }]
+  },
+  {
+    "hs-type": "temperature",
+    "hs-position": 6,
+    "title": {
+      "text": "Avg. Temperatures (°c)",
+      "style": {
+        "color": "#333333",
+        "fontWeight": "bold",
+        "fontSize": "10px",
+        "textTransform": "uppercase"
+      }
+    },
+    "tooltip": {
+      "pointFormat": "<b>{point.y:.1f}°C</b>",
+      "borderColor": "#E6E6E6",
+      "backgroundColor": "#FAFAFA"
+    },
+    "series": [{
+      "name": "Temperatures",
+      "data": [
+        ["January",   25.0],
+        ["February",  23.0],
+        ["March",     21.0],
+        ["April",     19.0],
+        ["May",       17.0],
+        ["June",      15.0],
+        ["July",      15.0],
+        ["August",    17.0],
+        ["September", 19.0],
+        ["October",   21.0],
+        ["November",  23.0],
+        ["December",  25.0]
+      ],
+      "color": "#2350A0"
+    }]
+  },
+  {
+    "hs-type": "precipitation",
+    "hs-position": 6,
+    "title": {
+      "text": "Avg. Precipitations (mm)",
+      "style": {
+        "color": "#333333",
+        "fontWeight": "bold",
+        "fontSize": "10px",
+        "textTransform": "uppercase"
+      }
+    },
+    "tooltip": {
+      "pointFormat": "<b>{point.y:.1f} mm</b>",
+      "borderColor": "#E6E6E6",
+      "backgroundColor": "#FAFAFA"
+    },
+    "series": [{
+      "name": "Precipitations",
+      "data": [
+        ["January",   25.0],
+        ["February",  23.0],
+        ["March",     21.0],
+        ["April",     19.0],
+        ["May",       17.0],
+        ["June",      15.0],
+        ["July",      15.0],
+        ["August",    17.0],
+        ["September", 19.0],
+        ["October",   21.0],
+        ["November",  23.0],
+        ["December",  25.0]
+      ],
+      "color": "#2350A0"
+    }]
+  },
+  {
+    "hs-type": "sunhours",
+    "hs-position": 6,
+    "title": {
+      "text": "Avg. Hours Of Sun (hrs)",
+      "style": {
+        "color": "#333333",
+        "fontWeight": "bold",
+        "fontSize": "10px",
+        "textTransform": "uppercase"
+      }
+    },
+    "tooltip": {
+      "pointFormat": "<b>{point.y:.1f} hrs</b>",
+      "borderColor": "#E6E6E6",
+      "backgroundColor": "#FAFAFA"
+    },
+    "series": [{
+      "name": "Hours Of Sun",
+      "data": [
+        ["January",   25.0],
+        ["February",  23.0],
+        ["March",     21.0],
+        ["April",     19.0],
+        ["May",       17.0],
+        ["June",      15.0],
+        ["July",      15.0],
+        ["August",    17.0],
+        ["September", 19.0],
+        ["October",   21.0],
+        ["November",  23.0],
+        ["December",  25.0]
+      ],
+      "color": "#2350A0"
+    }]
+  },
+  {
+    "hs-type": "temperature",
+    "hs-position": 7,
+    "title": {
+      "text": "Avg. Temperatures (°c)",
+      "style": {
+        "color": "#333333",
+        "fontWeight": "bold",
+        "fontSize": "10px",
+        "textTransform": "uppercase"
+      }
+    },
+    "tooltip": {
+      "pointFormat": "<b>{point.y:.1f}°C</b>",
+      "borderColor": "#E6E6E6",
+      "backgroundColor": "#FAFAFA"
+    },
+    "series": [{
+      "name": "Temperatures",
+      "data": [
+        ["January",   25.0],
+        ["February",  23.0],
+        ["March",     21.0],
+        ["April",     19.0],
+        ["May",       17.0],
+        ["June",      15.0],
+        ["July",      15.0],
+        ["August",    17.0],
+        ["September", 19.0],
+        ["October",   21.0],
+        ["November",  23.0],
+        ["December",  25.0]
+      ],
+      "color": "#2350A0"
+    }]
+  },
+  {
+    "hs-type": "precipitation",
+    "hs-position": 7,
+    "title": {
+      "text": "Avg. Precipitations (mm)",
+      "style": {
+        "color": "#333333",
+        "fontWeight": "bold",
+        "fontSize": "10px",
+        "textTransform": "uppercase"
+      }
+    },
+    "tooltip": {
+      "pointFormat": "<b>{point.y:.1f} mm</b>",
+      "borderColor": "#E6E6E6",
+      "backgroundColor": "#FAFAFA"
+    },
+    "series": [{
+      "name": "Precipitations",
+      "data": [
+        ["January",   25.0],
+        ["February",  23.0],
+        ["March",     21.0],
+        ["April",     19.0],
+        ["May",       17.0],
+        ["June",      15.0],
+        ["July",      15.0],
+        ["August",    17.0],
+        ["September", 19.0],
+        ["October",   21.0],
+        ["November",  23.0],
+        ["December",  25.0]
+      ],
+      "color": "#2350A0"
+    }]
+  },
+  {
+    "hs-type": "sunhours",
+    "hs-position": 7,
+    "title": {
+      "text": "Avg. Hours Of Sun (hrs)",
+      "style": {
+        "color": "#333333",
+        "fontWeight": "bold",
+        "fontSize": "10px",
+        "textTransform": "uppercase"
+      }
+    },
+    "tooltip": {
+      "pointFormat": "<b>{point.y:.1f} hrs</b>",
+      "borderColor": "#E6E6E6",
+      "backgroundColor": "#FAFAFA"
+    },
+    "series": [{
+      "name": "Hours Of Sun",
+      "data": [
+        ["January",   25.0],
+        ["February",  23.0],
+        ["March",     21.0],
+        ["April",     19.0],
+        ["May",       17.0],
+        ["June",      15.0],
+        ["July",      15.0],
+        ["August",    17.0],
+        ["September", 19.0],
+        ["October",   21.0],
+        ["November",  23.0],
+        ["December",  25.0]
+      ],
+      "color": "#2350A0"
+    }]
+  },
+  {
+    "hs-type": "temperature",
+    "hs-position": 8,
+    "title": {
+      "text": "Avg. Temperatures (°c)",
+      "style": {
+        "color": "#333333",
+        "fontWeight": "bold",
+        "fontSize": "10px",
+        "textTransform": "uppercase"
+      }
+    },
+    "tooltip": {
+      "pointFormat": "<b>{point.y:.1f}°C</b>",
+      "borderColor": "#E6E6E6",
+      "backgroundColor": "#FAFAFA"
+    },
+    "series": [{
+      "name": "Temperatures",
+      "data": [
+        ["January",   25.0],
+        ["February",  23.0],
+        ["March",     21.0],
+        ["April",     19.0],
+        ["May",       17.0],
+        ["June",      15.0],
+        ["July",      15.0],
+        ["August",    17.0],
+        ["September", 19.0],
+        ["October",   21.0],
+        ["November",  23.0],
+        ["December",  25.0]
+      ],
+      "color": "#2350A0"
+    }]
+  },
+  {
+    "hs-type": "precipitation",
+    "hs-position": 8,
+    "title": {
+      "text": "Avg. Precipitations (mm)",
+      "style": {
+        "color": "#333333",
+        "fontWeight": "bold",
+        "fontSize": "10px",
+        "textTransform": "uppercase"
+      }
+    },
+    "tooltip": {
+      "pointFormat": "<b>{point.y:.1f} mm</b>",
+      "borderColor": "#E6E6E6",
+      "backgroundColor": "#FAFAFA"
+    },
+    "series": [{
+      "name": "Precipitations",
+      "data": [
+        ["January",   25.0],
+        ["February",  23.0],
+        ["March",     21.0],
+        ["April",     19.0],
+        ["May",       17.0],
+        ["June",      15.0],
+        ["July",      15.0],
+        ["August",    17.0],
+        ["September", 19.0],
+        ["October",   21.0],
+        ["November",  23.0],
+        ["December",  25.0]
+      ],
+      "color": "#2350A0"
+    }]
+  },
+  {
+    "hs-type": "sunhours",
+    "hs-position": 8,
+    "title": {
+      "text": "Avg. Hours Of Sun (hrs)",
+      "style": {
+        "color": "#333333",
+        "fontWeight": "bold",
+        "fontSize": "10px",
+        "textTransform": "uppercase"
+      }
+    },
+    "tooltip": {
+      "pointFormat": "<b>{point.y:.1f} hrs</b>",
+      "borderColor": "#E6E6E6",
+      "backgroundColor": "#FAFAFA"
+    },
+    "series": [{
+      "name": "Hours Of Sun",
+      "data": [
+        ["January",   25.0],
+        ["February",  23.0],
+        ["March",     21.0],
+        ["April",     19.0],
+        ["May",       17.0],
+        ["June",      15.0],
+        ["July",      15.0],
+        ["August",    17.0],
+        ["September", 19.0],
+        ["October",   21.0],
+        ["November",  23.0],
+        ["December",  25.0]
+      ],
+      "color": "#2350A0"
+    }]
+  },
+  {
+    "hs-type": "temperature",
+    "hs-position": 9,
+    "title": {
+      "text": "Avg. Temperatures (°c)",
+      "style": {
+        "color": "#333333",
+        "fontWeight": "bold",
+        "fontSize": "10px",
+        "textTransform": "uppercase"
+      }
+    },
+    "tooltip": {
+      "pointFormat": "<b>{point.y:.1f}°C</b>",
+      "borderColor": "#E6E6E6",
+      "backgroundColor": "#FAFAFA"
+    },
+    "series": [{
+      "name": "Temperatures",
+      "data": [
+        ["January",   25.0],
+        ["February",  23.0],
+        ["March",     21.0],
+        ["April",     19.0],
+        ["May",       17.0],
+        ["June",      15.0],
+        ["July",      15.0],
+        ["August",    17.0],
+        ["September", 19.0],
+        ["October",   21.0],
+        ["November",  23.0],
+        ["December",  25.0]
+      ],
+      "color": "#2350A0"
+    }]
+  },
+  {
+    "hs-type": "precipitation",
+    "hs-position": 9,
+    "title": {
+      "text": "Avg. Precipitations (mm)",
+      "style": {
+        "color": "#333333",
+        "fontWeight": "bold",
+        "fontSize": "10px",
+        "textTransform": "uppercase"
+      }
+    },
+    "tooltip": {
+      "pointFormat": "<b>{point.y:.1f} mm</b>",
+      "borderColor": "#E6E6E6",
+      "backgroundColor": "#FAFAFA"
+    },
+    "series": [{
+      "name": "Precipitations",
+      "data": [
+        ["January",   25.0],
+        ["February",  23.0],
+        ["March",     21.0],
+        ["April",     19.0],
+        ["May",       17.0],
+        ["June",      15.0],
+        ["July",      15.0],
+        ["August",    17.0],
+        ["September", 19.0],
+        ["October",   21.0],
+        ["November",  23.0],
+        ["December",  25.0]
+      ],
+      "color": "#2350A0"
+    }]
+  },
+  {
+    "hs-type": "sunhours",
+    "hs-position": 9,
+    "title": {
+      "text": "Avg. Hours Of Sun (hrs)",
+      "style": {
+        "color": "#333333",
+        "fontWeight": "bold",
+        "fontSize": "10px",
+        "textTransform": "uppercase"
+      }
+    },
+    "tooltip": {
+      "pointFormat": "<b>{point.y:.1f} hrs</b>",
+      "borderColor": "#E6E6E6",
+      "backgroundColor": "#FAFAFA"
+    },
+    "series": [{
+      "name": "Hours Of Sun",
+      "data": [
+        ["January",   25.0],
+        ["February",  23.0],
+        ["March",     21.0],
+        ["April",     19.0],
+        ["May",       17.0],
+        ["June",      15.0],
+        ["July",      15.0],
+        ["August",    17.0],
+        ["September", 19.0],
+        ["October",   21.0],
+        ["November",  23.0],
+        ["December",  25.0]
+      ],
+      "color": "#2350A0"
+    }]
+  }
+]

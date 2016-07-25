@@ -1,0 +1,81 @@
+//=====================================================================================
+//===== OVERRIDE BOOTSTRAP VARS
+
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+$brand-primary:            #FFBD0F;
+$light-primary:            #FFFFFF;
+$dark-primary:             #333333;
+$gray-light:               #F7F7F7;
+$gray-primary:             #E5E5E5;
+$gray-base:                #F4F3F3;
+$gray-dark:                #777777;
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+$body-bg:               #FFFFFF;
+//** Global text color on `<body>`.
+$text-color:            #FFFFFF;
+
+//** Global textual link color.
+$link-color:            #3C78BE;
+//** Link hover color set via `darken()` function.
+$link-hover-color:      darken($link-color, 10%);
+//** Link hover decoration.
+$link-hover-decoration: underline;
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+// $font-family-sans-serif:  "DINWebPro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-sans-serif:  Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+$font-size-base:          18px;
+// $font-size-base:          14px;
+$font-size-large:         ceil(($font-size-base * 1.25)); // ~18px
+
+$font-size-h2:            floor(($font-size-base * 1.2222222222)); // ~22px
+$font-size-h3:            floor(($font-size-base * 2.6666666667)); // ~48px
+
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base:        1.428571429; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+$line-height-computed:    floor(($font-size-base * $line-height-base)); // ~20px
+
+//== Container sizes
+//
+//## Define the maximum width of `.container` for different screen sizes.
+
+//** Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width:         14px;
+
+//== Components
+//
+//## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
+
+//** Global color for active items (e.g., navs or dropdowns).
+$component-active-color:    #232323;
+//** Global background color for active items (e.g., navs or dropdowns).
+$component-active-bg:       #FFBD0F;
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md:                  1180px;
+$screen-lg:                  1350px;
+
+//== Container sizes
+//
+//## Define the maximum width of `.container` for different screen sizes.
+
+// Medium screen / desktop
+$container-desktop:            (976px + $grid-gutter-width) !default;

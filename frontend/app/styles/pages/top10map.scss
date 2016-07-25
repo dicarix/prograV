@@ -1,0 +1,27 @@
+.#{$prefix}-p-top10map {
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(229, 227, 223);
+  .container-fixed {
+    @include vertical-align;
+    text-align: center;
+    padding: 0 110px;
+    width: 100%;
+    z-index: 9;
+    > * {
+      opacity: 0;
+    }
+    .header{
+      @include fontBold;
+      color:#000000;
+    }
+    .description{
+      @include fontItalic;
+      color: #000;
+    }
+  }
+
+  .#{$prefix}-m-map {
+    opacity: 0;
+  }
+}

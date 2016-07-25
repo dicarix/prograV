@@ -1,0 +1,353 @@
+.slick-slider {
+  .slick-slide {
+    outline: 0;
+  }
+}
+
+// Homepage Slider Styles
+.#{$prefix}-m-slider {
+  .slick-dots {
+    width: auto;
+    right: 15px; bottom: 0;
+    li {
+      margin: 0;
+    }
+    button:before {
+      color: $gray-primary;
+      opacity: 1;
+    }
+    .slick-active button:before {
+      color: $brand-primary;
+      opacity: 1;
+    }
+  }
+
+  @include breakpoint('phone') {
+    .slick-dots {
+      width: 100%;
+      right: auto; bottom: 0;
+    }
+  }
+}
+
+// Related Grid Slider Styles
+.#{$prefix}-m-related {
+  .slick-dots {
+    bottom: -20px;
+    li {
+      margin: 0;
+    }
+    button:before {
+      color: $light-primary;
+      opacity: 1;
+    }
+    .slick-active button:before {
+      color: $dark-primary;
+      opacity: 1;
+    }
+  }
+}
+
+// Social Grid Slider Styles
+.#{$prefix}-m-social {
+  .slick-dots {
+    bottom: -20px;
+    li {
+      margin: 0;
+    }
+    button:before {
+      color: $light-primary;
+      opacity: 1;
+    }
+    .slick-active button:before {
+      color: $brand-primary;
+      opacity: 1;
+    }
+  }
+
+  @include breakpoint('tablet-down') {
+    .slick-dots {
+      bottom: -40px;
+    }
+  }
+}
+
+// Homepage Map Slide Styles
+.#{$prefix}-m-homepage-map-slider {
+  .slick-slide {
+    margin: 0 30px;
+  }
+  .slick-list {
+    margin: 0 -30px;
+  }
+  .slick-arrow {
+    top: 667px;
+    z-index: 2;
+  }
+  .slick-prev {
+    left: 35px;
+  }
+  .slick-next {
+    right: 45px;
+  }
+  .slick-arrow:before {
+    color: #000;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+    background-size: 9px 19px;
+    width: 9px;
+    height: 19px;
+    display: block;
+  }
+  .slick-prev:before {
+    background: url(../images/svg/map-arrow-left.svg);
+  }
+  .slick-next:before {
+    background: url(../images/svg/map-arrow-right.svg);
+  }
+  .slick-disabled {
+    display: none !important;
+  }
+  .slick-dots {
+    bottom: auto;
+    top: 650px;
+    left: -10px;
+    li {
+      margin: 0;
+    }
+    button:before {
+      color: #999999;
+      opacity: 1;
+      font-size: 8px;
+      line-height: 23px;
+    }
+    .slick-active button:before {
+      color: #3169B4;
+      opacity: 1;
+    }
+  }
+
+  @include breakpoint('tablet') {
+    .slick-slide {
+      margin: 0 50px;
+    }
+    .slick-list {
+      margin: 0 -50px;
+    }
+    .slick-arrow {
+      top: auto;
+      bottom: 44px;
+    }
+    .slick-dots {
+      top: auto;
+      bottom: 32px;
+    }
+  }
+
+  @include breakpoint('tablet-landscape') {
+    .slick-prev {
+      left: 16%;
+    }
+    .slick-next {
+      right: 15%;
+    }
+  }
+}
+
+// Explore Slider Styles
+.#{$prefix}-m-explore {
+  .slick-slider {
+    margin-bottom: 0;
+  }
+  .slick-vertical .slick-slide {
+    border: none;
+  }
+
+  @include breakpoint('phone-up') {
+    .slick-vertical .slick-slide {
+      max-height: 477px;
+    }
+  }
+
+  @include breakpoint('phone') {
+    .slick-dots {
+      width: 100%;
+      right: auto; bottom: 55%;
+      margin-bottom: 0;
+      li {
+        margin: 0;
+      }
+      button:before {
+        color: $gray-primary;
+        opacity: 1;
+        font-size: 8px;
+        line-height: 23px;
+      }
+      .slick-active button:before {
+        color: $brand-primary;
+        opacity: 1;
+      }
+      &.dots-hidden {
+        z-index: -1;
+      }
+    }
+  }
+
+  @include breakpoint('phone-landscape') {
+    .slick-dots {
+      width: 34%;
+      bottom: 10%;
+      z-index: 1 !important;
+    }
+  }
+}
+
+// Alternative Slider
+.#{$prefix}-m-alternative {
+  .slick-dots {
+    li {
+      margin: 0;
+    }
+    button:before {
+      color: #808284;
+      opacity: 1;
+    }
+    .slick-active button:before {
+      color: $dark-primary;
+      opacity: 1;
+    }
+  }
+
+  @include breakpoint('phone') {
+    .slick-dots {
+      bottom: -45px;
+    }
+    .slick-slide {
+      opacity: 0.7;
+      @include transition(opacity 0.8s ease);
+      &.slick-active {
+        opacity: 1;
+        @include transition(opacity 0.8s ease);
+      }
+    }
+  }
+}
+
+// Top 10 Map Slider Styles
+.#{$prefix}-m-slider-top10 {
+  .slick-slider {
+    margin-bottom: 0;
+  }
+  .slick-dots {
+    top: 80px;
+    bottom: auto;
+    li {
+      margin: 0;
+    }
+    button:before {
+      color: $light-primary;
+      opacity: 1;
+      font-size: 8px;
+      line-height: 23px;
+    }
+    .slick-active button:before {
+      color: $brand-primary;
+      opacity: 1;
+    }
+  }
+  .slick-arrow {
+    top: 98px;
+    z-index: 1;
+  }
+  .slick-prev {
+    left: 32px;
+  }
+  .slick-next {
+    right: 22px;
+  }
+  .slick-arrow:before {
+    color: #000;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: 0 5px;
+    background-size: 9px 19px;
+    width: 9px;
+    height: 19px;
+    display: block;
+  }
+  .slick-prev:before {
+    background: url(../images/svg/map-arrow-left-white.svg);
+  }
+  .slick-next:before {
+    background: url(../images/svg/map-arrow-right-white.svg);
+  }
+  .slick-disabled {
+    display: none !important;
+  }
+
+  @include breakpoint('phone') {
+    .slick-arrow {
+      display: none !important;
+    }
+  }
+}
+
+// Top 10 Chart Slider Styles
+.js-slider-chart {
+  .slick-slider {
+    margin-bottom: 0;
+  }
+  .slick-dots {
+    top: auto;
+    bottom: 0px;
+    width: auto;
+    right: 3px;
+    li {
+      margin: 0;
+    }
+    button:before {
+      color: #808284;
+      opacity: 1;
+      font-size: 8px;
+      line-height: 23px;
+    }
+    .slick-active button:before {
+      color: $dark-primary;
+      opacity: 1;
+    }
+  }
+
+  @include breakpoint('phone') {
+    .slick-dots {
+      width: 100%;
+      bottom: 6px;
+    }
+  }
+}
+
+// Top 10 Chart Titles Slider Styles
+.js-slider-socialchart {
+  @include breakpoint('phone') {
+    .slick-slider {
+      margin-bottom: 0;
+    }
+    .slick-dots {
+      top: auto;
+      bottom: 10px;
+      li {
+        margin: 0;
+      }
+      button:before {
+        color: #808284;
+        opacity: 1;
+        font-size: 8px;
+        line-height: 23px;
+      }
+      .slick-active button:before {
+        color: $dark-primary;
+        opacity: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.#{$prefix}-m-share-fixed {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  &.affix {
+    position: fixed;
+    top: $nav-desktop-wh * 4;
+  }
+  .fixed-item {
+    display: block;
+    @include sat-gradient($light-primary, #F2F3F2);
+    border: 0;
+    border-bottom: 1px dotted $gray-dark;
+    width: 93px;
+    height: 93px;
+    color: $dark-primary;
+    @include fontArial;
+    font-size: 10px;
+    line-height: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    svg {
+      width: 27px;
+      height: 25px;
+      color: #555555;
+      display: block;
+      margin: 0 auto 8px;
+    }
+  }
+
+  @include breakpoint('tablet-up') {
+    width: $nav-desktop-wh;
+  }
+
+  @include breakpoint('tablet-portrait-down') {
+    border: 1px solid $gray-primary;
+    &.affix {
+      top: $nav-mobile-height;
+    }
+    .fixed-item {
+      border: 0;
+      border-right: 1px dotted $gray-dark;
+      width: 50%;
+      height: 48px;
+      float: left;
+      font-size: 13px;
+      line-height: 13px;
+      padding-top: 6px;
+      &:last-child {
+        border-right: 0;
+      }
+      svg {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0;
+        margin-right: 15px;
+      }
+    }
+    .btn-share {
+      width: 100%;
+    }
+  }
+}

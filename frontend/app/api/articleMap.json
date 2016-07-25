@@ -1,0 +1,44 @@
+[
+  {
+    "latitude": -34.047224,
+    "longitude": 25.629026,
+    "markerImage": "../images/maps/popup-contact.jpg",
+    "markerTitle": "Cape Town",
+    "markerSubtitle": "Western Cape"
+  },
+  {
+    "latitude": -34.2,
+    "longitude": 18.4,
+    "markerImage": "../images/maps/popup-contact.jpg",
+    "markerTitle": "Cape Town",
+    "markerSubtitle": "Western Cape"
+  },
+  {
+    "latitude": -34.95,
+    "longitude": 19.4808652,
+    "markerImage": "../images/maps/popup-contact.jpg",
+    "markerTitle": "Cape Town",
+    "markerSubtitle": "Western Cape"
+  },
+  {
+    "latitude": -34.9724131,
+    "longitude": 20.2987746,
+    "markerImage": "../images/maps/popup-contact.jpg",
+    "markerTitle": "Cape Town",
+    "markerSubtitle": "Western Cape"
+  },
+  {
+    "latitude": -34.4248189,
+    "longitude": 22.1284898,
+    "markerImage": "../images/maps/popup-contact.jpg",
+    "markerTitle": "Cape Town",
+    "markerSubtitle": "Western Cape"
+  },
+  {
+    "latitude": -34.382019,
+    "longitude": 24.311793,
+    "markerImage": "../images/maps/popup-contact.jpg",
+    "markerTitle": "Cape Town",
+    "markerSubtitle": "Western Cape"
+  }
+]

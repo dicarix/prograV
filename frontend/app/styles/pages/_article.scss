@@ -1,0 +1,89 @@
+.#{$prefix}-p-article {
+  p {
+    color: $dark-primary;
+    @include fontRegular();
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    a {
+      color: #3B73BF;
+      text-decoration: none;
+      border-bottom: 1px solid #DEDEDE;
+      &:hover {
+        border-bottom-color: #3B73BF;
+      }
+    }
+    &.heading {
+      @include fontLight();
+      font-size: 28px;
+      line-height: 36px;
+    }
+    &.quote,
+    &.quote-src,
+    &.desc,
+    &.image-src {
+      @include fontItalic();
+    }
+    &.quote {
+      font-size: 24px;
+      line-height: 32px;
+      &:before {
+        content:"\00ab";
+      }
+      &:after {
+        content:"\00bb";
+      }
+    }
+    &.quote-src,
+    &.desc,
+    &.image-src {
+      font-size: 16px;
+      line-height: 24px;
+      color: #555555;
+    }
+    &.quote-src {
+      padding-left: 25px;
+      background: url(../images/svg/article-source.svg);
+      background-repeat: no-repeat;
+      background-position: 0 5px;
+      background-size: 15px 14px;
+      margin-top: -30px;
+    }
+    &.image-src {
+      padding-left: 25px;
+      background: url(../images/svg/article-camera.svg);
+      background-repeat: no-repeat;
+      background-position: 0 3px;
+      background-size: 17px 14px;
+    }
+  }
+
+  #parallax-reveal-wrapper {
+    padding-top: 50px;
+    li {
+      color: $dark-primary;
+      @include fontRegular();
+      font-size: 20px;
+      line-height: 30px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      a {
+        color: #3B73BF;
+        text-decoration: none;
+        border-bottom: 1px solid #DEDEDE;
+        &:hover {
+          border-bottom-color: #3B73BF;
+        }
+      }
+    }
+  }
+
+  @include breakpoint('phone') {
+    .#{$prefix}-m-share {
+      .separator {
+        width: 95%;
+      }
+    }
+  }
+}

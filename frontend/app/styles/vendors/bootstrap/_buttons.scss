@@ -1,0 +1,206 @@
+// Bootstrap Buttons
+// -------------------------
+
+.btn {
+  &:active {
+    box-shadow: none;
+  }
+}
+
+.btn-primary {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $dark-primary;
+  border-color: #FFC808;
+  font-size: 14px;
+  line-height: 14px;
+  border-radius: 0;
+  padding: 12px 20px;
+  @include sat-gradient(#FFBD0F, #FFAE0F);
+  &:hover, &:focus, &:active {
+    @include sat-gradient(#FFAE0F, #FFBD0F);
+    color: $dark-primary;
+    border-color: #FFC808;
+  }
+}
+
+.btn-social {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 12px;
+  border-radius: 0;
+  padding: 15px 45px;
+  &.twitter {
+    color: $light-primary;
+    border-color: #2E76AC;
+    @include sat-gradient(#328BCE, #26689A);
+    &:hover, &:focus {
+      @include sat-gradient(#26689A, #328BCE);
+      color: $light-primary;
+      border-color: #2E76AC;
+    }
+  }
+  &.facebook {
+    color: $light-primary;
+    border-color: #3B5998;
+    @include sat-gradient(#4869AD, #3B5A98);
+    &:hover, &:focus {
+      @include sat-gradient(#3B5A98, #4869AD);
+      color: $light-primary;
+      border-color: #3B5998;
+    }
+  }
+  svg {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    pointer-events: none;
+    margin-right: 5px;
+  }
+}
+
+.btn-category {
+  @include fontRegular();
+  color: $brand-primary;
+  border-color: $brand-primary;
+  font-size: 12px;
+  line-height: 12px;
+  border-radius: 0;
+  padding: 5px 8px;
+  background-color: transparent;
+  &:hover, &:focus {
+    background-color: transparent;
+    color: $brand-primary;
+    border-color: $brand-primary;
+  }
+}
+
+.btn-loadmore {
+  @include fontArial;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $dark-primary;
+  border-color: #BDBDBD;
+  font-size: 12px;
+  line-height: 12px;
+  border-radius: 0;
+  padding: 15px 100px;
+  @include sat-gradient(#FEFFFF, #F2F2F3);
+  &:hover, &:focus {
+    @include sat-gradient(#F2F2F3, #FEFFFF);
+    color: $dark-primary;
+    border-color: #BDBDBD;
+  }
+}
+
+.btn-wishlist {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: bold;
+  border-radius: 0;
+  padding: 8px;
+  &.btn-wishlist-yes {
+    color: $dark-primary;
+    border-color: #D9D9D9;
+    @include sat-gradient(#FFFFFF, #F2F2F2);
+    &:hover, &:focus {
+      color: $dark-primary;
+      border-color: #D9D9D9;
+      @include sat-gradient(#F2F2F2, #FFFFFF);
+    }
+  }
+  &.btn-wishlist-no {
+    color: #3B73BF;
+    background: none;
+    border: none;
+    &:hover, &:focus {
+      color: #3B73BF;
+      background: none;
+      border: none;
+    }
+  }
+}
+
+.btn-share {
+  color: $dark-primary;
+  border-color: #D6D6D6;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: bold;
+  border-radius: 0;
+  padding: 15px;
+  @include sat-gradient(#FEFFFF, #F3F3F2);
+  &:hover, &:focus {
+    background: #F2F2F2;
+    color: $dark-primary;
+    border-color: #D6D6D6;
+  }
+  svg {
+    color: #555555;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  &.social {
+    color: $light-primary;
+    &:hover, &:focus {
+      color: $light-primary;
+    }
+  }
+  &.js-twitter {
+    @include sat-gradient(#338ACD, #26689A);
+    &:hover, &:focus {
+      @include sat-gradient(#26689A, #338ACD);
+    }
+  }
+  &.js-facebook {
+    @include sat-gradient(#4868AD, #3C5A99);
+    &:hover, &:focus {
+      @include sat-gradient(#3C5A99, #4868AD);
+    }
+  }
+  &.js-google {
+    @include sat-gradient(#F15C46, #DE4C39);
+    &:hover, &:focus {
+      @include sat-gradient(#DE4C39, #F15C46);
+    }
+  }
+  &.js-pinterest {
+    @include sat-gradient(#E53A37, #CC2128);
+    &:hover, &:focus {
+      @include sat-gradient(#CC2128, #E53A37);
+    }
+  }
+  &.js-email {
+    @include sat-gradient(#949494, #6f6f6f);
+    &:hover, &:focus {
+      @include sat-gradient(#6f6f6f, #949494);
+    }
+  }
+}
+
+.btn-cookie {
+  @include fontArial;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $light-primary;
+  border-color: #363636;
+  font-size: 12px;
+  line-height: 12px;
+  border-radius: 0;
+  padding: 12px 32px;
+  @include sat-gradient(#333232, #010102);
+  &:hover, &:focus {
+    @include sat-gradient(#010102, #333232);
+    color: $light-primary;
+    border-color: #363636;
+  }
+}
+
+@include breakpoint('phone') {
+  .btn-loadmore {
+    width: 80%;
+    padding: 15px 0;
+  }
+}

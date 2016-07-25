@@ -1,0 +1,174 @@
+$explore-multiselect-large: 350px;
+$explore-multiselect-small: 198px;
+.sat-multiselect {
+  &.explore-single {
+    .multiselect,
+    .multiselect-container {
+      width: $explore-multiselect-large;
+    }
+  }
+  &.explore-multiple {
+    .multiselect,
+    .multiselect-container {
+      width: $explore-multiselect-small;
+    }
+  }
+  &.explore-dropdown {
+    .multiselect-container {
+      max-height: 290px;
+    }
+  }
+  &.filter-dropdown {
+    .btn-group,
+    .multiselect {
+      width: 100%;
+    }
+    .multiselect {
+      margin: 0;
+      font-size: 11px;
+      line-height: 11px;
+      @include fontArial;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding-left: 10px;
+      color: $dark-primary !important;
+      background-position: 95% 50%;
+      background-size: 12px 7px;
+    }
+  }
+  .multiselect,
+  .multiselect-container {
+    border-radius: 0;
+    border: none;
+  }
+  .multiselect {
+    height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    margin-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: $light-primary !important;
+    background: url(../images/svg/nav-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 95% 54%;
+    background-size: 15px 8px;
+    @include fontLight();
+    color: #555555 !important;
+    &:hover, &:focus {
+      background-color: $light-primary !important;
+      box-shadow: none;
+    }
+    span {
+      vertical-align: sub;
+    }
+    .caret {
+      display: none;
+    }
+  }
+  .open {
+    .multiselect {
+      background-image: url(../images/svg/nav-arrow-close.svg);
+    }
+  }
+  .multiselect-container {
+    overflow: auto;
+    margin-top: 0;
+    .active {
+      a {
+        background-color: $light-primary;
+      }
+    }
+    a {
+      color: #3C78BE;
+      font-size: 14px;
+      line-height: 16px;
+      white-space: normal;
+      padding: 3px 0 3px 10px;
+      &:hover, &:focus {
+        outline: 0;
+        color: #285BA1;
+        background-color: $light-primary;
+        text-decoration: underline;
+      }
+    }
+    li {
+      label {
+        padding: 3px 10px 5px 29px;
+        @include fontRegular();
+      }
+      input {
+        margin-top: 1px;
+      }
+    }
+    .multiselect-all {
+      text-decoration: none;
+      label {
+        @include fontBold();
+      }
+    }
+    .multiselect-group {
+      label {
+        color: #555555;
+        padding: 0;
+        padding-left: 17px;
+        font-size: 16px;
+        line-height: 16px
+      }
+    }
+  }
+
+  .btn-group.open .dropdown-toggle {
+    box-shadow: none;
+  }
+
+  @include breakpoint('phone-up') {
+    &.filter-dropdown {
+      .multiselect-container {
+        width: 150%;
+        left: -25%;
+        max-height: 240px;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  @include breakpoint('phone') {
+    .btn-group,
+    .multiselect,
+    .multiselect-container {
+      width: 100% !important;
+    }
+    .multiselect {
+      margin-top: 10px;
+    }
+    .multiselect-container {
+      margin-bottom: 0;
+    }
+    &.explore-dropdown {
+      .multiselect-container {
+        max-height: 45vh;
+      }
+    }
+    &.filter-dropdown {
+      .multiselect {
+        border-bottom: 1px solid #F4F3F3 !important;
+        padding-left: 42px;
+      }
+      .multiselect-container {
+        position: relative;
+        border-bottom: 1px solid #F4F3F3;
+        box-shadow: none;
+      }
+    }
+  }
+
+  @include breakpoint('phone-landscape') {
+    &.explore-dropdown {
+      .multiselect-container {
+        max-height: 24vh;
+      }
+    }
+  }
+}
