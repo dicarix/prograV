@@ -7,7 +7,7 @@ using System.Web.Routing;
 using System.Web.Security;
 using System.Web.SessionState;
 
-namespace prograV
+namespace prograV.UI
 {
     public class Global : HttpApplication
     {

@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Optimization;
 using System.Web.UI;
 
-namespace prograV
+namespace prograV.UI
 {
     public class BundleConfig
     {
