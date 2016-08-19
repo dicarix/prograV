@@ -13,6 +13,6 @@ namespace prograV.Datos
     public class Ciudad
     {
         public string NombreCiudad { get; set; }
-        public Pais Pais { get; set; }
+        public int idPais { get; set; }
     }
 }

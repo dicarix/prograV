@@ -8,16 +8,16 @@ namespace prograV.Datos
 {
     public class Paquete
     {
-        public Cliente Cliente { get; set; }
+        public int idCliente { get; set; }
         public bool Estado { get; set; }
         public float Monto { get; set; }
         public DateTime FechaCreacion{ get; set; }
     }
     public class DetallePaquete
     {
-        public Paquete Paquete { get; set; }
-        public ReservacionVuelo VueloSalida { get; set; }
-        public ReservacionVuelo VueloIda{ get; set; }
-        public ReservacionHotel ReservacionHotel { get; set; }
+        public int idPaquete { get; set; }
+        public int VueloSalida { get; set; }
+        public int VueloIda{ get; set; }
+        public int ReservacionHotel { get; set; }
     }
 }

@@ -8,15 +8,15 @@ namespace prograV.Datos
 {
     public class Reservacion
     {
-        public int Capacidad { get; set; }
+        public int CantidadPersonas { get; set; }
         public float MontoTotal { get; set; }
     }
     public class ReservacionHotel:Reservacion
     {
-        public Hoteles Hotel { get; set; }
+        public int idHotel { get; set; }
     }
     public class ReservacionVuelo : Reservacion
     {
-        public Vuelo Vuelo { get; set; }
+        public int idVuelo { get; set; }
     }
 }

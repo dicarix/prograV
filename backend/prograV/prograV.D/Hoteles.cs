@@ -8,12 +8,13 @@ namespace prograV.Datos
 {
     public class Hoteles
     {
+        public string NombreHotel { get; set; }
         public string Descripcion { get; set; }
         public float CostoNoche { get; set; }
-        public tipoHabitacion tipoHabitacion{ get; set; }
+        public int tipoHabitacion{ get; set; }
         public int Estrellas { get; set; }
         public float CostoBase { get; set; }
-        public Pais Pais { get; set; }
+        public int idPais { get; set; }
     }
     public class tipoHabitacion
     {
