@@ -18,9 +18,30 @@ namespace prograV.DS
             _conexion = new OrmLiteConnectionFactory(DB.Default.dbConnection, SqlServerDialect.Provider);
             _db = _conexion.Open();
         }
+
+        public void ActualizarTipoHabitacion(tipoHabitacion pais, string clave)
+        {
+            throw new NotImplementedException();
+        }
+
+        public tipoHabitacion BuscarTipoHabitacionporNombre(string nombreTipoHabitacion)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void EliminarTipoHabitacion(tipoHabitacion TipoHabitacion)
+        {
+            throw new NotImplementedException();
+        }
+
         public void InsertarTipoHabitacion(tipoHabitacion tipoHabitacion)
         {
             _db.Insert(tipoHabitacion);
+        }
+
+        public List<tipoHabitacion> ListaTipoHabitacion()
+        {
+            throw new NotImplementedException();
         }
     }
 }

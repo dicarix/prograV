@@ -13,5 +13,6 @@ namespace prograV.BL
         List<Datos.Pais> ListaPais();
         void EliminarPais(Datos.Pais pais);
         void ActualizarPais(Datos.Pais pais, string clave);
+        Datos.Pais BuscarPaisporID(int idPais);
     }
 }

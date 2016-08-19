@@ -29,6 +29,12 @@ namespace prograV.DS
             return _db.Select<Datos.Pais>(x => x.NombrePais == nombrePais).FirstOrDefault();
         }
 
+        public Datos.Pais BuscarPaisporID(int idPais)
+        {
+            return _db.Select<Datos.Pais>(x => x.idPais == idPais).FirstOrDefault();
+
+        }
+
         public void EliminarPais(Datos.Pais pais)
         {
             _db.Delete(pais);

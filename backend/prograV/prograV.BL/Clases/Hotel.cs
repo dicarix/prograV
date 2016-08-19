@@ -14,9 +14,30 @@ namespace prograV.BL
         {
             HotelObject = new DS.Hotel();
         }
+
+        public void ActualizarHotel(Hoteles hotel, string clave)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Hoteles BuscarHotelporNombre(string nombreHotel)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void EliminarHotel(Hoteles Hotel)
+        {
+            throw new NotImplementedException();
+        }
+
         public void InsertarHotel(Hoteles hotel)
         {
             HotelObject.InsertarHotel(hotel);
+        }
+
+        public List<Hoteles> ListaHotel()
+        {
+            throw new NotImplementedException();
         }
     }
 }

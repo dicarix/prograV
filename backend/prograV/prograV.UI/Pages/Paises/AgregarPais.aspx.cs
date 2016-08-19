@@ -36,6 +36,8 @@ namespace prograV.UI.Pages.Paises
                 var existePais = paisBL.BuscarPaisporNombre(txtNombrePais.Text);
                 if (existePais != null)
                 {
+                    AlertMensaje.Visible = false;
+
                     mensajeError.Visible = true;
                     textoMensajeError.InnerHtml = "Pais existe ya";
                     txtNombrePais.Text = String.Empty;
@@ -43,6 +45,8 @@ namespace prograV.UI.Pages.Paises
                 }
                 else
                 {
+                    mensajeError.Visible = false;
+
                     paisBL.InsertarPais(pais);
                     AlertMensaje.Visible = true;
                     textoMensaje.InnerHtml = String.Format("Pais {0} agregado", txtNombrePais.Text);
@@ -53,7 +57,7 @@ namespace prograV.UI.Pages.Paises
             catch (Exception)
             {
                 mensajeError.Visible = true;
-                textoMensajeError.InnerHtml = "No se pudo agregar el pais";
+                textoMensajeError.InnerHtml = "No se pudo agregar la ciudad";
                 
             }
 

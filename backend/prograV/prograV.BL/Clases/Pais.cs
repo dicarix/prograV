@@ -26,6 +26,12 @@ namespace prograV.BL
 
         }
 
+        public Datos.Pais BuscarPaisporID(int idPais)
+        {
+            return paisObject.BuscarPaisporID(idPais);
+
+        }
+
         public void EliminarPais(Datos.Pais pais)
         {
             paisObject.EliminarPais(pais);

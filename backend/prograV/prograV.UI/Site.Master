@@ -110,10 +110,10 @@
                         <a class="nav-link nav-dropdown-toggle" href="#"><i class="fa fa-flag-o"></i>Ciudades</a>
                         <ul class="nav-dropdown-items">
                            <li class="nav-item">
-                                <a class="nav-link" href="/Pages/Paises/AgregarPais" target="_top"><i class="fa fa-plus-circle"></i>Agregar</a>
+                                <a class="nav-link" href="/Pages/Ciudades/AgregarCiudad" target="_top"><i class="fa fa-plus-circle"></i>Agregar</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/Pages/Paises/ListadoPaises" target="_top"><i class="fa fa-file"></i>Listar</a>
+                                <a class="nav-link" href="/Pages/Ciudades/ListarCiudades.aspx" target="_top"><i class="fa fa-file"></i>Listar</a>
                             </li>
                         </ul>
                     </li>

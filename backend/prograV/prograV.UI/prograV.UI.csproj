@@ -133,7 +133,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Pages\Ciudades\" />
     <Folder Include="Pages\Clientes\" />
     <Folder Include="Pages\Hoteles\" />
     <Folder Include="Pages\Reservaciones\" />
@@ -162,6 +161,8 @@
     <Content Include="fonts\fontawesome-webfont.woff2" />
     <Content Include="fonts\FontAwesome.otf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Pages\Ciudades\AgregarCiudad.aspx" />
+    <Content Include="Pages\Ciudades\ListarCiudades.aspx" />
     <Content Include="Pages\Paises\AgregarPais.aspx" />
     <Content Include="Pages\Paises\ListadoPaises.aspx" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
@@ -224,6 +225,20 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Ciudades\AgregarCiudad.aspx.cs">
+      <DependentUpon>AgregarCiudad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Ciudades\AgregarCiudad.aspx.designer.cs">
+      <DependentUpon>AgregarCiudad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Ciudades\ListarCiudades.aspx.cs">
+      <DependentUpon>ListarCiudades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Ciudades\ListarCiudades.aspx.designer.cs">
+      <DependentUpon>ListarCiudades.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Paises\AgregarPais.aspx.cs">
       <DependentUpon>AgregarPais.aspx</DependentUpon>
