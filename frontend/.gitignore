@@ -1,0 +1,11 @@
+# Frontend
+.DS_Store
+node_modules
+npm-debug.log
+dist
+.tmp
+.sass-cache
+.divshot-cache
+bower_components
+test/bower_components
+.idea
