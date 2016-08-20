@@ -31,39 +31,102 @@ namespace prograV.UI.Frontend {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl DescripcionTxt;
         
         /// <summary>
-        /// estrellasTxt control.
+        /// ciudadOrigentxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl estrellasTxt;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ciudadOrigentxt;
         
         /// <summary>
-        /// costoNocheTxt control.
+        /// ciudadDestinotxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl costoNocheTxt;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ciudadDestinotxt;
         
         /// <summary>
-        /// costoBaseTxt control.
+        /// fechaSalidatxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl costoBaseTxt;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl fechaSalidatxt;
         
         /// <summary>
-        /// lvHoteles control.
+        /// fechaLLegadatxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListView lvHoteles;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl fechaLLegadatxt;
+        
+        /// <summary>
+        /// capacidadtxt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl capacidadtxt;
+        
+        /// <summary>
+        /// aerolineatxt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl aerolineatxt;
+        
+        /// <summary>
+        /// precioBasetxt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl precioBasetxt;
+        
+        /// <summary>
+        /// clasetxt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl clasetxt;
+        
+        /// <summary>
+        /// escalasTxt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl escalasTxt;
+        
+        /// <summary>
+        /// cantidadEscalaTxt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl cantidadEscalaTxt;
+        
+        /// <summary>
+        /// lvVuelos control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListView lvVuelos;
     }
 }

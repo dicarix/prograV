@@ -62,7 +62,7 @@
                 </div>
             </div>
             <div class="row js-slick-related">
-                <asp:ListView runat="server" ID="lvHoteles">
+                <asp:ListView runat="server" ID="lvVuelos">
                 <LayoutTemplate>
                     <asp:PlaceHolder ID="itemPlaceholder" runat="server"></asp:PlaceHolder>
                 </LayoutTemplate>
