@@ -20,7 +20,7 @@ namespace prograV.UI
                 Apellidos = "Castro",
                 Email = "diegocd0506@gmail.com",
                 Telefono = "22754358",
-                Contrasena = util.encriptarString("admin")
+                //Contrasena = util.encriptarString("admin")
         };
            // clienteBL.InsertarCliente(cliente);
         }

@@ -42,5 +42,17 @@ namespace prograV.UI.Pages.Clientes
             gvClientes.DataSource = listaClientes;
             gvClientes.DataBind();
         }
+
+        protected void gvClientes_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+            if (e.CommandName == "Modificar")
+            {
+
+                int index = Convert.ToInt32(e.CommandArgument);
+                GridViewRow row = gvClientes.Rows[index];
+                var idciudad = row.Cells[3].Text;
+                Response.Redirect("~/Pages/Clientes/AgregarCliente?idCliente=" + idciudad);
+            }
+        }
     }
 }

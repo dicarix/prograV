@@ -49,8 +49,8 @@
                 </div>
             </div>
         </fieldset>
-        <asp:Button Text="Agregar" ID="btnAgregarCliente" runat="server" OnClick="" class="btn btn-primary" />
-        <asp:Button Text="Actualizar" ID="btnActualizarCliente" Visible="false" runat="server" OnClick="" class="btn btn-primary" />
+        <asp:Button Text="Agregar" ID="btnAgregarCliente" runat="server" OnClick="btnAgregarCliente_Click" class="btn btn-primary" />
+        <asp:Button Text="Actualizar" ID="btnActualizarCliente" Visible="false" runat="server" OnClick="btnActualizarCliente_Click" class="btn btn-primary" />
     </div>
 </asp:Content>
 

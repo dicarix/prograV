@@ -10,7 +10,7 @@
     </div>
     <h2>Clientes</h2>
     <div class="form-group">
-        <asp:GridView runat="server" ID="gvClientes" AutoGenerateColumns="False" CssClass="table table-hover" OnRowDeleting="gvClientes_RowDeleting">
+        <asp:GridView runat="server" ID="gvClientes" AutoGenerateColumns="False" CssClass="table table-hover" OnRowDeleting="gvClientes_RowDeleting" OnRowCommand="gvClientes_RowCommand">
             <Columns>
                 <asp:BoundField HeaderText="Nombre" DataField="Nombre" SortExpression="Nombre"></asp:BoundField>
                 <asp:BoundField HeaderText="Apellidos" DataField="Apellidos" SortExpression="Apellidos"></asp:BoundField>
@@ -21,6 +21,14 @@
                 <asp:TemplateField>
                     <ItemTemplate>
                         <asp:LinkButton ID="lnkdel" runat="server" Text='<%# "<i class=\"fa fa-minus-circle\" ></i> Eliminar"%>' CommandName="Delete"></asp:LinkButton>
+                    </ItemTemplate>
+                </asp:TemplateField>
+                <asp:TemplateField>
+                    <ItemTemplate>
+                        <asp:LinkButton ID="btnModificar" runat="server"
+                            CommandName="Modificar"
+                            CommandArgument="<%# ((GridViewRow) Container).RowIndex %>"
+                            Text='<%# "<i class=\"fa fa-pencil-square\" ></i> Modificar"%>' />
                     </ItemTemplate>
                 </asp:TemplateField>
             </Columns>
