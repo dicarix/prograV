@@ -17,17 +17,22 @@ namespace prograV.BL
 
         public void ActualizarHotel(Hoteles hotel, string clave)
         {
-            throw new NotImplementedException();
+            HotelObject.ActualizarHotel(hotel, clave);
+        }
+
+        public Hoteles BuscarHotelporId(int Id)
+        {
+            return HotelObject.BuscarHotelporId(Id);
         }
 
         public Hoteles BuscarHotelporNombre(string nombreHotel)
         {
-            throw new NotImplementedException();
+            return HotelObject.BuscarHotelporNombre(nombreHotel);
         }
 
         public void EliminarHotel(Hoteles Hotel)
         {
-            throw new NotImplementedException();
+            HotelObject.EliminarHotel(Hotel);
         }
 
         public void InsertarHotel(Hoteles hotel)
@@ -37,7 +42,7 @@ namespace prograV.BL
 
         public List<Hoteles> ListaHotel()
         {
-            throw new NotImplementedException();
+            return HotelObject.ListaHotel();
         }
     }
 }

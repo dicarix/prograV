@@ -15,19 +15,19 @@ namespace prograV.BL
             tipo = new DS.TipoHabitacion();
         }
 
-        public void ActualizarTipoHabitacion(tipoHabitacion pais, string clave)
+        public void ActualizarTipoHabitacion(tipoHabitacion habitacion, string clave)
         {
-            throw new NotImplementedException();
+            tipo.ActualizarTipoHabitacion(habitacion, clave);
         }
 
         public tipoHabitacion BuscarTipoHabitacionporNombre(string nombreTipoHabitacion)
         {
-            throw new NotImplementedException();
+            return tipo.BuscarTipoHabitacionporNombre(nombreTipoHabitacion);
         }
 
-        public void EliminarTipoHabitacion(tipoHabitacion TipoHabitacion)
+        public void EliminarTipoHabitacion(tipoHabitacion tipoHabitacion)
         {
-            throw new NotImplementedException();
+            tipo.EliminarTipoHabitacion(tipoHabitacion);
         }
 
         public void InsertarTipoHabitacion(tipoHabitacion tipoHabitacion)
@@ -37,7 +37,7 @@ namespace prograV.BL
 
         public List<tipoHabitacion> ListaTipoHabitacion()
         {
-            throw new NotImplementedException();
+            return tipo.ListaTipoHabitacion();
         }
     }
 }

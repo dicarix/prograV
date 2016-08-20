@@ -12,6 +12,6 @@ namespace prograV.DS
         Datos.tipoHabitacion BuscarTipoHabitacionporNombre(string nombreTipoHabitacion);
         List<Datos.tipoHabitacion> ListaTipoHabitacion();
         void EliminarTipoHabitacion(Datos.tipoHabitacion TipoHabitacion);
-        void ActualizarTipoHabitacion(Datos.tipoHabitacion pais, string clave);
+        void ActualizarTipoHabitacion(Datos.tipoHabitacion habitacion, string clave);
     }
 }

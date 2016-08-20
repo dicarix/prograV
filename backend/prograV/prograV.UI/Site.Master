@@ -64,7 +64,7 @@
                     <li class="nav-item nav-dropdown">
                         <a class="nav-link nav-dropdown-toggle" href="#"><i class="fa fa-user"></i>Clientes</a>
                         <ul class="nav-dropdown-items">
-                           <li class="nav-item">
+                            <li class="nav-item">
                                 <a class="nav-link" href="/Pages/Paises/AgregarPais" target="_top"><i class="fa fa-plus-circle"></i>Agregar</a>
                             </li>
                             <li class="nav-item">
@@ -75,7 +75,7 @@
                     <li class="nav-item nav-dropdown">
                         <a class="nav-link nav-dropdown-toggle" href="#"><i class="fa fa-plane"></i>Vuelos</a>
                         <ul class="nav-dropdown-items">
-                           <li class="nav-item">
+                            <li class="nav-item">
                                 <a class="nav-link" href="/Pages/Paises/AgregarPais" target="_top"><i class="fa fa-plus-circle"></i>Agregar</a>
                             </li>
                             <li class="nav-item">
@@ -86,11 +86,17 @@
                     <li class="nav-item nav-dropdown">
                         <a class="nav-link nav-dropdown-toggle" href="#"><i class="fa fa-bed"></i>Hoteles</a>
                         <ul class="nav-dropdown-items">
-                           <li class="nav-item">
-                                <a class="nav-link" href="/Pages/Paises/AgregarPais" target="_top"><i class="fa fa-plus-circle"></i>Agregar</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Pages/Hoteles/AgregarHotel" target="_top"><i class="fa fa-plus-circle"></i>Agregar Hotel</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/Pages/Paises/ListadoPaises" target="_top"><i class="fa fa-file"></i>Listar</a>
+                                <a class="nav-link" href="/Pages/Hoteles/ListarHoteles" target="_top"><i class="fa fa-file"></i>Listar Hoteles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Pages/Hoteles/AgregarHabitacion" target="_top"><i class="fa fa-plus-circle"></i>Agregar Habitacion</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Pages/Hoteles/ListarHabitaciones" target="_top"><i class="fa fa-file"></i>Listar Habitaciones</a>
                             </li>
                         </ul>
                     </li>
@@ -103,13 +109,13 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="/Pages/Paises/ListadoPaises" target="_top"><i class="fa fa-file"></i>Listar</a>
                             </li>
-                            
+
                         </ul>
                     </li>
                     <li class="nav-item nav-dropdown">
                         <a class="nav-link nav-dropdown-toggle" href="#"><i class="fa fa-flag-o"></i>Ciudades</a>
                         <ul class="nav-dropdown-items">
-                           <li class="nav-item">
+                            <li class="nav-item">
                                 <a class="nav-link" href="/Pages/Ciudades/AgregarCiudad" target="_top"><i class="fa fa-plus-circle"></i>Agregar</a>
                             </li>
                             <li class="nav-item">
@@ -132,7 +138,7 @@
             </nav>
         </div>
         <div class="main">
-            
+
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
 

@@ -21,7 +21,8 @@ namespace prograV.DS
 
         public void ActualizarPais(Datos.Pais pais,string clave)
         {
-            _db.Update(pais, p => p.NombrePais == clave);
+            _db.Update<Datos.Pais>(new { NombrePais = pais.NombrePais }, p => p.NombrePais ==clave);
+       
         }
 
         public Datos.Pais BuscarPaisporNombre(string nombrePais)
@@ -42,7 +43,7 @@ namespace prograV.DS
 
         public void InsertarPais(Datos.Pais pais)
         {
-            _db.Insert(pais);
+            _db.InsertOnly(() => new Datos.Pais { NombrePais = pais.NombrePais});
         }
 
         public List<Datos.Pais> ListaPais()

@@ -21,27 +21,52 @@ namespace prograV.DS
 
         public void ActualizarHotel(Hoteles hotel, string clave)
         {
-            throw new NotImplementedException();
+            _db.Update<Datos.Hoteles>(new {
+                CostoBase = hotel.CostoBase,
+                CostoNoche = hotel.CostoNoche,
+                Descripcion = hotel.Descripcion,
+                Estrellas = hotel.Estrellas,
+                idPais = hotel.idPais,
+                NombreHotel = hotel.NombreHotel,
+                tipoHabitacion = hotel.tipoHabitacion
+            }, p => p.idHotel == int.Parse(clave));
+
+        }
+
+        public Hoteles BuscarHotelporId(int Id)
+        {
+            return _db.Select<Datos.Hoteles>(x => x.idHotel == Id).FirstOrDefault();
+
         }
 
         public Hoteles BuscarHotelporNombre(string nombreHotel)
         {
-            throw new NotImplementedException();
+            return _db.Select<Datos.Hoteles>(x => x.NombreHotel == nombreHotel).FirstOrDefault();
+
         }
 
-        public void EliminarHotel(Hoteles Hotel)
+        public void EliminarHotel(Hoteles hotel)
         {
-            throw new NotImplementedException();
+            _db.Delete(hotel);
         }
 
         public void InsertarHotel(Hoteles hotel)
         {
-            _db.Insert(hotel);
+            _db.InsertOnly(() => new Datos.Hoteles {
+                CostoBase = hotel.CostoBase,
+                CostoNoche= hotel.CostoNoche,
+                Descripcion= hotel.Descripcion,
+                Estrellas= hotel.Estrellas,
+                idPais = hotel.idPais,
+                NombreHotel = hotel.NombreHotel,
+                tipoHabitacion = hotel.tipoHabitacion
+            });
+
         }
 
         public List<Hoteles> ListaHotel()
         {
-            throw new NotImplementedException();
+            return _db.Select<Datos.Hoteles>();
         }
     }
 }

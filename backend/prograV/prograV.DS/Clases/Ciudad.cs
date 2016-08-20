@@ -41,7 +41,7 @@ namespace prograV.DS
 
         public void InsertarCiudad(Datos.Ciudad ciudad)
         {
-            _db.Insert(ciudad);
+            _db.InsertOnly(() => new Datos.Ciudad { NombreCiudad = ciudad.NombreCiudad, idPais = ciudad.idPais });
         }
 
         public List<Datos.Ciudad> ListaCiudad()

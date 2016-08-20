@@ -19,29 +19,29 @@ namespace prograV.DS
             _db = _conexion.Open();
         }
 
-        public void ActualizarTipoHabitacion(tipoHabitacion pais, string clave)
+        public void ActualizarTipoHabitacion(tipoHabitacion habitacion, string clave)
         {
-            throw new NotImplementedException();
+            _db.Update<Datos.tipoHabitacion>(new { Descripcion = habitacion.Descripcion}, p => p.Descripcion == clave);
         }
 
         public tipoHabitacion BuscarTipoHabitacionporNombre(string nombreTipoHabitacion)
         {
-            throw new NotImplementedException();
+            return _db.Select<Datos.tipoHabitacion>(x => x.Descripcion == nombreTipoHabitacion).FirstOrDefault();
         }
 
-        public void EliminarTipoHabitacion(tipoHabitacion TipoHabitacion)
+        public void EliminarTipoHabitacion(tipoHabitacion tipoHabitacion)
         {
-            throw new NotImplementedException();
+            _db.Delete(tipoHabitacion);
         }
 
         public void InsertarTipoHabitacion(tipoHabitacion tipoHabitacion)
         {
-            _db.Insert(tipoHabitacion);
+            _db.InsertOnly(() => new Datos.tipoHabitacion { Descripcion = tipoHabitacion.Descripcion });
         }
 
         public List<tipoHabitacion> ListaTipoHabitacion()
         {
-            throw new NotImplementedException();
+            return _db.Select<Datos.tipoHabitacion>();
         }
     }
 }

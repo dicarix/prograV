@@ -60,7 +60,7 @@ namespace prograV.UI.Pages.Ciudades
                     txtNombreCiudad.Text = String.Empty;
                 };
             }
-            catch
+            catch(Exception ex)
             {
                 mensajeError.Visible = true;
                 textoMensajeError.InnerHtml = "No se pudo agregar la ciudad";
