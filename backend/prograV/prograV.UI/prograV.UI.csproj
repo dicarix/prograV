@@ -317,6 +317,7 @@
     <Content Include="Frontend\styles\vendor.css" />
     <Content Include="Pages\Ciudades\AgregarCiudad.aspx" />
     <Content Include="Pages\Ciudades\ListarCiudades.aspx" />
+    <Content Include="Pages\Clientes\AgregarCliente.aspx" />
     <Content Include="Pages\Clientes\ListarClientes.aspx" />
     <Content Include="Pages\Hoteles\AgregarHabitacion.aspx" />
     <Content Include="Pages\Hoteles\AgregarHotel.aspx" />
@@ -430,6 +431,13 @@
     </Compile>
     <Compile Include="Pages\Ciudades\ListarCiudades.aspx.designer.cs">
       <DependentUpon>ListarCiudades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Clientes\AgregarCliente.aspx.cs">
+      <DependentUpon>AgregarCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Clientes\AgregarCliente.aspx.designer.cs">
+      <DependentUpon>AgregarCliente.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Clientes\ListarClientes.aspx.cs">
       <DependentUpon>ListarClientes.aspx</DependentUpon>
