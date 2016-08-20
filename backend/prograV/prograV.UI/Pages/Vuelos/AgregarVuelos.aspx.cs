@@ -42,8 +42,14 @@ namespace prograV.UI.Pages.Vuelos
             var ciudadOrigen = ciudadObj.BuscarCiudadporNombre(ddlCiudadOrigen.SelectedItem.Text);
             var ciudadDestino = ciudadObj.BuscarCiudadporNombre(ddlCiudadDestino.SelectedItem.Text);
             var tipoVuelo = tipovueloObj.BuscartipoClaseVueloporNombre(ddlClase.SelectedItem.Text);
+            var flag = false;
             try
             {
+                if(FechaLlegada.SelectedDate < FechaSalida.SelectedDate)
+                {
+                    flag = true;
+                    throw new Exception();
+                };
                 var vuelo = new Datos.Vuelo()
                 {
                     Aerolinea = txtAerolinea.Text,
@@ -59,6 +65,7 @@ namespace prograV.UI.Pages.Vuelos
                 };
 
                 vuelosObj.InsertarVuelo(vuelo);
+                mensajeError.Visible = false;
                 AlertMensaje.Visible = true;
                 textoMensaje.InnerHtml = "Vuelo agregado";
 
@@ -71,9 +78,19 @@ namespace prograV.UI.Pages.Vuelos
             catch (Exception ex)
             {
                 mensajeError.Visible = true;
-                textoMensajeError.InnerHtml = "No se pudo agregar el vuelo";
+                if (flag)
+                {
+                    textoMensajeError.InnerHtml = "Las fecha de ida debe ser mayor a la de llegada";
+
+                }
+                else
+                {
+                    textoMensajeError.InnerHtml = "No se pudo agregar el vuelo";
+
+                }
 
             }
+            
 
         }
 

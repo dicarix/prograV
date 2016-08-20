@@ -85,7 +85,7 @@
                <div class="row form-group">
                 <label class="col-md-4 control-label" for="txtNumeroEscalas">Escalas</label>
                 <div class="col-md-4">
-                    <asp:TextBox ID="txtNumeroEscalas" runat="server" name="txtNumeroEscalas" class="form-control input-md" required=""></asp:TextBox>
+                    <asp:TextBox ID="txtNumeroEscalas" runat="server" name="txtNumeroEscalas" class="form-control input-md"></asp:TextBox>
                     <ajaxToolkit:FilteredTextBoxExtender ID="TextBox1_FilteredTextBoxExtender" runat="server"
                     Enabled="True" TargetControlID="txtNumeroEscalas" FilterType="Numbers"></ajaxToolkit:FilteredTextBoxExtender>
                 </div>
