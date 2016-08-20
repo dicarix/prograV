@@ -51,11 +51,11 @@ namespace prograV.UI.Pages.Vuelos
         }
         public void llenarLista()
         {
-            List<vueloDetalle> nuevaLista = new List<vueloDetalle>();
+            List<Datos.vueloDetalle> nuevaLista = new List<Datos.vueloDetalle>();
             List<Datos.Vuelo> listaVuelo = vuelosObj.ListaVuelos();
             foreach (var item in listaVuelo)
             {
-                var ciudad = new vueloDetalle()
+                var ciudad = new Datos.vueloDetalle()
                 {
                     Aerolinea = item.Aerolinea,
                     FechaLlegada = item.FechaLlegada.ToString(),
@@ -68,11 +68,5 @@ namespace prograV.UI.Pages.Vuelos
             gvVuelo.DataBind();
         }
     }
-    class vueloDetalle
-    {
-        public string FechaSalida { get; set; }
-        public string FechaLlegada { get; set; }
-        public int idVuelo { get; set; }
-        public string Aerolinea { get; set; }
-    }
+  
 }

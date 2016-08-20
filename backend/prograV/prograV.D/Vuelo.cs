@@ -25,4 +25,12 @@ namespace prograV.Datos
         public int idTipoClaseVuelo { get; set; }
         public string Descripcion { get; set; }
     }
+    public class vueloDetalle
+    {
+        public int idVuelo { get; set; }
+        public string Aerolinea { get; set; }
+        public string Ciudad { get; set; }
+        public string FechaLlegada { get; set; }
+        public string FechaSalida { get; set; }
+    }
 }

@@ -38,11 +38,11 @@ namespace prograV.UI.Frontend
         }
         public void llenarVuelos()
         {
-            List<vueloDetalle> nuevaLista = new List<vueloDetalle>();
+            List<Datos.vueloDetalle> nuevaLista = new List<Datos.vueloDetalle>();
             List<Datos.Vuelo> listaVuelo = vuelosObj.ListaVuelos();
             foreach (var item in listaVuelo)
             {
-                var ciudad = new vueloDetalle()
+                var ciudad = new Datos.vueloDetalle()
                 {
                     Aerolinea = item.Aerolinea,
                     idVuelo = item.idVuelo,
@@ -54,11 +54,6 @@ namespace prograV.UI.Frontend
             lvVuelos.DataBind();
 
         }
-        class vueloDetalle
-        {
-            public int idVuelo { get; set; }
-            public string Aerolinea { get; set; }
-            public string Ciudad { get; set; }
-        }
+        
     }
 }
