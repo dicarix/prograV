@@ -75,11 +75,17 @@
                     <li class="nav-item nav-dropdown">
                         <a class="nav-link nav-dropdown-toggle" href="#"><i class="fa fa-plane"></i>Vuelos</a>
                         <ul class="nav-dropdown-items">
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Pages/Paises/AgregarPais" target="_top"><i class="fa fa-plus-circle"></i>Agregar</a>
+                             <li class="nav-item">
+                                <a class="nav-link" href="/Pages/Vuelos/AgregarClase" target="_top"><i class="fa fa-plus-circle"></i>Agregar Clase Vuelo</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/Pages/Paises/ListadoPaises" target="_top"><i class="fa fa-file"></i>Listar</a>
+                                <a class="nav-link" href="/Pages/Vuelos/ListarClases" target="_top"><i class="fa fa-file"></i>Listar Clase Vuelo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Pages/Vuelos/" target="_top"><i class="fa fa-plus-circle"></i>Agregar Vuelos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Pages/Vuelos/" target="_top"><i class="fa fa-file"></i>Listar Vuelos</a>
                             </li>
                         </ul>
                     </li>

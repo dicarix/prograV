@@ -8,6 +8,7 @@ namespace prograV.Datos
 {
     public class Vuelo
     {
+        public int idVuelo { get; set; }
         public int CiudadOrigen { get; set; }
         public int CiudadDestino { get; set; }
         public DateTime FechaSalida { get; set; }
@@ -21,6 +22,7 @@ namespace prograV.Datos
     }
     public class tipoClaseVuelo
     {
+        public int idTipoClaseVuelo { get; set; }
         public string Descripcion { get; set; }
     }
 }

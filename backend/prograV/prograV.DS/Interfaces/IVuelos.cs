@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace prograV.DS
 {
-    interface IVuelos
+    public interface IVuelos
     {
         void InsertarVuelo(Datos.Vuelo vuelo);
         List<Datos.Vuelo> ListaVuelos();
         void EliminarVuelos(Datos.Vuelo Vuelos);
         void ActualizarVuelos(Datos.Vuelo vuelo, string clave);
+        Datos.Vuelo BuscarVueloPorNombre(string nombre);
+        Datos.Vuelo BuscarVueloPorId(int id);
     }
 }

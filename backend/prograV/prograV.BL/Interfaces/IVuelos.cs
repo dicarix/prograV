@@ -12,5 +12,7 @@ namespace prograV.BL
         List<Datos.Vuelo> ListaVuelos();
         void EliminarVuelos(Datos.Vuelo Vuelos);
         void ActualizarVuelos(Datos.Vuelo vuelo, string clave);
+        Datos.Vuelo BuscarVueloPorNombre(string nombre);
+        Datos.Vuelo BuscarVueloPorId(int id);
     }
 }

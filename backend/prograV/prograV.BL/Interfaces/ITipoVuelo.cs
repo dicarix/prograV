@@ -10,6 +10,7 @@ namespace prograV.BL
     {
         void InsertartipoClaseVuelo(Datos.tipoClaseVuelo tipoClaseVuelo);
         Datos.tipoClaseVuelo BuscartipoClaseVueloporNombre(string nombretipoClaseVuelo);
+        Datos.tipoClaseVuelo BuscartipoClaseVueloporID(int id);
         List<Datos.tipoClaseVuelo> ListatipoClaseVuelo();
         void EliminartipoClaseVuelo(Datos.tipoClaseVuelo tipoClaseVuelo);
         void ActualizartipoClaseVuelo(Datos.tipoClaseVuelo tipoClaseVuelo, string clave);
