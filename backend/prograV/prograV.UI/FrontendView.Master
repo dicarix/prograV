@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Frontend.master.cs" Inherits="prograV.UI.Frontend" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="FrontendView.Master.cs" Inherits="prograV.UI.FrontendView" %>
 
 <!DOCTYPE html>
 
@@ -12,7 +12,7 @@
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
 
-    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <webopt:BundleReference runat="server" Path="~/Content/frontend" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
@@ -24,8 +24,6 @@
                 <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
                 <%--Framework Scripts--%>
                 <asp:ScriptReference Name="MsAjaxBundle" />
-                <asp:ScriptReference Name="jquery" />
-                <asp:ScriptReference Name="bootstrap" />
                 <asp:ScriptReference Name="respond" />
                 <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
                 <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
@@ -44,6 +42,7 @@
         </asp:ContentPlaceHolder>
 
     </form>
-    <script src="/Scripts/app.js"></script>
+    <script src="/Frontend/scripts/vendor.js"></script>
+    <script src="/Frontend/scripts/main.js"></script>
 </body>
 </html>

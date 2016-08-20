@@ -7,18 +7,27 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace prograV.UI {
+namespace prograV.UI.Frontend {
     
     
-    public partial class Frontend {
+    public partial class Homepage {
         
         /// <summary>
-        /// MainContent control.
+        /// lvhoteles control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::System.Web.UI.WebControls.ListView lvhoteles;
+        
+        /// <summary>
+        /// lvVuelos control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListView lvVuelos;
     }
 }

@@ -162,8 +162,158 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.woff2" />
     <Content Include="fonts\FontAwesome.otf" />
-    <Content Include="Frontend.Master" />
+    <Content Include="FrontendView.Master" />
+    <Content Include="Frontend\DetalleHotel.aspx" />
+    <Content Include="Frontend\fonts\MundoSansStd-Bold.eot" />
+    <Content Include="Frontend\fonts\MundoSansStd-Bold.ttf" />
+    <Content Include="Frontend\fonts\MundoSansStd-Bold.woff" />
+    <Content Include="Frontend\fonts\MundoSansStd-Bold.woff2" />
+    <Content Include="Frontend\fonts\MundoSansStd-Italic.eot" />
+    <Content Include="Frontend\fonts\MundoSansStd-Italic.ttf" />
+    <Content Include="Frontend\fonts\MundoSansStd-Italic.woff" />
+    <Content Include="Frontend\fonts\MundoSansStd-Italic.woff2" />
+    <Content Include="Frontend\fonts\MundoSansStd-Light.eot" />
+    <Content Include="Frontend\fonts\MundoSansStd-Light.ttf" />
+    <Content Include="Frontend\fonts\MundoSansStd-Light.woff" />
+    <Content Include="Frontend\fonts\MundoSansStd-Light.woff2" />
+    <Content Include="Frontend\fonts\MundoSansStd.eot" />
+    <Content Include="Frontend\fonts\MundoSansStd.ttf" />
+    <Content Include="Frontend\fonts\MundoSansStd.woff" />
+    <Content Include="Frontend\fonts\MundoSansStd.woff2" />
+    <Content Include="Frontend\fonts\slick.eot" />
+    <Content Include="Frontend\fonts\slick.ttf" />
+    <Content Include="Frontend\fonts\slick.woff" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Frontend\fonts\slick.svg" />
+    <Content Include="Frontend\Homepage.aspx" />
+    <Content Include="Frontend\images\article\inline.jpg" />
+    <Content Include="Frontend\images\article\large.jpg" />
+    <Content Include="Frontend\images\article\small.jpg" />
+    <Content Include="Frontend\images\explore\map.jpg" />
+    <Content Include="Frontend\images\explore\whattodo-mobile.jpg" />
+    <Content Include="Frontend\images\explore\whattodo.jpg" />
+    <Content Include="Frontend\images\explore\whentovisit-mobile.jpg" />
+    <Content Include="Frontend\images\explore\whentovisit.jpg" />
+    <Content Include="Frontend\images\explore\wheretogo-mobile.jpg" />
+    <Content Include="Frontend\images\explore\wheretogo.jpg" />
+    <Content Include="Frontend\images\explore\whichprice-mobile.jpg" />
+    <Content Include="Frontend\images\explore\whichprice.jpg" />
+    <Content Include="Frontend\images\explore\whowith-mobile.jpg" />
+    <Content Include="Frontend\images\explore\whowith.jpg" />
+    <Content Include="Frontend\images\filter\results.jpg" />
+    <Content Include="Frontend\images\global\loading.gif" />
+    <Content Include="Frontend\images\grids\desktop-homepage-adventures-1.jpg" />
+    <Content Include="Frontend\images\grids\desktop-homepage-adventures-2.jpg" />
+    <Content Include="Frontend\images\grids\desktop-homepage-adventures-3.jpg" />
+    <Content Include="Frontend\images\grids\desktop-homepage-adventures-4.jpg" />
+    <Content Include="Frontend\images\grids\desktop-homepage-adventures-5.jpg" />
+    <Content Include="Frontend\images\grids\desktop-homepage-adventures-6.jpg" />
+    <Content Include="Frontend\images\grids\desktop-homepage-adventures-7.jpg" />
+    <Content Include="Frontend\images\grids\desktop-homepage-adventures-8.jpg" />
+    <Content Include="Frontend\images\grids\desktop-homepage-adventures-9.jpg" />
+    <Content Include="Frontend\images\grids\mobile-homepage-adventures-1.jpg" />
+    <Content Include="Frontend\images\grids\mobile-homepage-adventures-2.jpg" />
+    <Content Include="Frontend\images\grids\mobile-homepage-adventures-3.jpg" />
+    <Content Include="Frontend\images\grids\mobile-homepage-adventures-4.jpg" />
+    <Content Include="Frontend\images\grids\mobile-homepage-adventures-5.jpg" />
+    <Content Include="Frontend\images\grids\mobile-homepage-adventures-6.jpg" />
+    <Content Include="Frontend\images\grids\mobile-homepage-adventures-7.jpg" />
+    <Content Include="Frontend\images\grids\mobile-homepage-adventures-8.jpg" />
+    <Content Include="Frontend\images\grids\mobile-homepage-adventures-9.jpg" />
+    <Content Include="Frontend\images\grids\related.jpg" />
+    <Content Include="Frontend\images\grids\social.jpg" />
+    <Content Include="Frontend\images\maps\marker.png" />
+    <Content Include="Frontend\images\maps\markerExplore.png" />
+    <Content Include="Frontend\images\maps\markerExploreTransparent.png" />
+    <Content Include="Frontend\images\maps\marker_hover.png" />
+    <Content Include="Frontend\images\maps\popup-contact.jpg" />
+    <Content Include="Frontend\images\maps\popup.png" />
+    <Content Include="Frontend\images\maps\slider_image_01.jpg" />
+    <Content Include="Frontend\images\maps\slider_image_02.jpg" />
+    <Content Include="Frontend\images\maps\slider_image_03.jpg" />
+    <Content Include="Frontend\images\maps\slider_image_04.jpg" />
+    <Content Include="Frontend\images\maps\slider_image_05.jpg" />
+    <Content Include="Frontend\images\nav\whattodo.jpg" />
+    <Content Include="Frontend\images\nav\whentovisit.jpg" />
+    <Content Include="Frontend\images\nav\wheretogo.jpg" />
+    <Content Include="Frontend\images\nav\whichprice.jpg" />
+    <Content Include="Frontend\images\nav\whowith.jpg" />
+    <Content Include="Frontend\images\sliders\article-mobile.jpg" />
+    <Content Include="Frontend\images\sliders\article.jpg" />
+    <Content Include="Frontend\images\sliders\contact-mobile.jpg" />
+    <Content Include="Frontend\images\sliders\contact.jpg" />
+    <Content Include="Frontend\images\sliders\homepage-mobile.jpg" />
+    <Content Include="Frontend\images\sliders\homepage.jpg" />
+    <Content Include="Frontend\images\sliders\search-mobile.jpg" />
+    <Content Include="Frontend\images\sliders\search.jpg" />
+    <Content Include="Frontend\images\sliders\top10-feature.jpg" />
+    <Content Include="Frontend\images\sliders\top10-mobile.jpg" />
+    <Content Include="Frontend\images\sliders\top10-social.jpg" />
+    <Content Include="Frontend\images\sliders\top10-user.jpg" />
+    <Content Include="Frontend\images\sliders\top10.jpg" />
+    <Content Include="Frontend\images\sliders\wishlist-mobile.jpg" />
+    <Content Include="Frontend\images\sliders\wishlist.jpg" />
+    <Content Include="Frontend\images\svg\article-accomodation.svg" />
+    <Content Include="Frontend\images\svg\article-camera.svg" />
+    <Content Include="Frontend\images\svg\article-events.svg" />
+    <Content Include="Frontend\images\svg\article-food.svg" />
+    <Content Include="Frontend\images\svg\article-source.svg" />
+    <Content Include="Frontend\images\svg\article-tours.svg" />
+    <Content Include="Frontend\images\svg\article-travel.svg" />
+    <Content Include="Frontend\images\svg\article-visit.svg" />
+    <Content Include="Frontend\images\svg\chart-rainfall.svg" />
+    <Content Include="Frontend\images\svg\chart-sun.svg" />
+    <Content Include="Frontend\images\svg\chart-thermostat.svg" />
+    <Content Include="Frontend\images\svg\close.svg" />
+    <Content Include="Frontend\images\svg\dropdown-arrow-up.svg" />
+    <Content Include="Frontend\images\svg\explore-map.svg" />
+    <Content Include="Frontend\images\svg\explore-what.svg" />
+    <Content Include="Frontend\images\svg\explore-when.svg" />
+    <Content Include="Frontend\images\svg\explore-where.svg" />
+    <Content Include="Frontend\images\svg\explore-which.svg" />
+    <Content Include="Frontend\images\svg\explore-who.svg" />
+    <Content Include="Frontend\images\svg\logo.svg" />
+    <Content Include="Frontend\images\svg\map-arrow-left-white.svg" />
+    <Content Include="Frontend\images\svg\map-arrow-left.svg" />
+    <Content Include="Frontend\images\svg\map-arrow-right-white.svg" />
+    <Content Include="Frontend\images\svg\map-arrow-right.svg" />
+    <Content Include="Frontend\images\svg\map-menu.svg" />
+    <Content Include="Frontend\images\svg\nav-arrow-close.svg" />
+    <Content Include="Frontend\images\svg\nav-arrow.svg" />
+    <Content Include="Frontend\images\svg\nav-close.svg" />
+    <Content Include="Frontend\images\svg\nav-explore.svg" />
+    <Content Include="Frontend\images\svg\nav-menu.svg" />
+    <Content Include="Frontend\images\svg\nav-search.svg" />
+    <Content Include="Frontend\images\svg\nav-whattodo.svg" />
+    <Content Include="Frontend\images\svg\nav-whentovisit.svg" />
+    <Content Include="Frontend\images\svg\nav-wheretogo.svg" />
+    <Content Include="Frontend\images\svg\nav-whichprice.svg" />
+    <Content Include="Frontend\images\svg\nav-whowith.svg" />
+    <Content Include="Frontend\images\svg\nav-wishlist.svg" />
+    <Content Include="Frontend\images\svg\share.svg" />
+    <Content Include="Frontend\images\svg\slider-camera.svg" />
+    <Content Include="Frontend\images\svg\slider-location.svg" />
+    <Content Include="Frontend\images\svg\slider-sun.svg" />
+    <Content Include="Frontend\images\svg\slider-tags.svg" />
+    <Content Include="Frontend\images\svg\slider-temperature.svg" />
+    <Content Include="Frontend\images\svg\social-facebook.svg" />
+    <Content Include="Frontend\images\svg\social-flickr.svg" />
+    <Content Include="Frontend\images\svg\social-google.svg" />
+    <Content Include="Frontend\images\svg\social-instagram.svg" />
+    <Content Include="Frontend\images\svg\social-pinterest.svg" />
+    <Content Include="Frontend\images\svg\social-twitter.svg" />
+    <Content Include="Frontend\images\svg\social-youtube.svg" />
+    <Content Include="Frontend\images\svg\trip-advisor.svg" />
+    <Content Include="Frontend\images\svg\wishlist-add.svg" />
+    <Content Include="Frontend\images\svg\wishlist-delete.svg" />
+    <Content Include="Frontend\images\svg\wishlist-saved.svg" />
+    <Content Include="Frontend\images\top10-alternative\image.jpg" />
+    <EmbeddedResource Include="Frontend\scripts\main.js" />
+    <Content Include="Frontend\scripts\modernizr.js" />
+    <EmbeddedResource Include="Frontend\scripts\vendor.js" />
+    <Content Include="Frontend\styles\ajax-loader.gif" />
+    <Content Include="Frontend\styles\main.css" />
+    <Content Include="Frontend\styles\vendor.css" />
     <Content Include="Pages\Ciudades\AgregarCiudad.aspx" />
     <Content Include="Pages\Ciudades\ListarCiudades.aspx" />
     <Content Include="Pages\Clientes\ListarClientes.aspx" />
@@ -235,12 +385,26 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Frontend.Master.cs">
-      <DependentUpon>Frontend.Master</DependentUpon>
+    <Compile Include="FrontendView.Master.cs">
+      <DependentUpon>FrontendView.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Frontend.Master.designer.cs">
-      <DependentUpon>Frontend.Master</DependentUpon>
+    <Compile Include="FrontendView.Master.designer.cs">
+      <DependentUpon>FrontendView.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend\DetalleHotel.aspx.cs">
+      <DependentUpon>DetalleHotel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frontend\DetalleHotel.aspx.designer.cs">
+      <DependentUpon>DetalleHotel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend\Homepage.aspx.cs">
+      <DependentUpon>Homepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frontend\Homepage.aspx.designer.cs">
+      <DependentUpon>Homepage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
