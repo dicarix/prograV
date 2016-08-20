@@ -137,7 +137,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Pages\Clientes\" />
     <Folder Include="Pages\Reservaciones\" />
   </ItemGroup>
   <ItemGroup>
@@ -166,6 +165,7 @@
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Pages\Ciudades\AgregarCiudad.aspx" />
     <Content Include="Pages\Ciudades\ListarCiudades.aspx" />
+    <Content Include="Pages\Clientes\ListarClientes.aspx" />
     <Content Include="Pages\Hoteles\AgregarHabitacion.aspx" />
     <Content Include="Pages\Hoteles\AgregarHotel.aspx" />
     <Content Include="Pages\Hoteles\ListarHabitaciones.aspx" />
@@ -250,6 +250,13 @@
     </Compile>
     <Compile Include="Pages\Ciudades\ListarCiudades.aspx.designer.cs">
       <DependentUpon>ListarCiudades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Clientes\ListarClientes.aspx.cs">
+      <DependentUpon>ListarClientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Clientes\ListarClientes.aspx.designer.cs">
+      <DependentUpon>ListarClientes.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Hoteles\AgregarHabitacion.aspx.cs">
       <DependentUpon>AgregarHabitacion.aspx</DependentUpon>

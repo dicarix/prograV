@@ -36,7 +36,7 @@ namespace prograV.BL
 
         public void InsertarCliente(Datos.Cliente cliente)
         {
-            cliente.InsertarCliente(cliente);
+            clienteObj.InsertarCliente(cliente);
         }
 
         public List<Datos.Cliente> ListaCliente()
