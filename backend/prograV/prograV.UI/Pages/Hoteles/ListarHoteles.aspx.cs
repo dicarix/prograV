@@ -54,14 +54,14 @@ namespace prograV.UI.Pages.Hoteles
             List<hotelDetalle> nuevaLista = new List<hotelDetalle>();
             foreach (var item in listahoteles)
             {
-                var ciudad = new hotelDetalle()
+                var hotelDe = new hotelDetalle()
                 {
                     DescripcionHotel = item.Descripcion,
                     NombreHotel = item.NombreHotel,
                     Pais = paisBl.BuscarPaisporID(item.idPais).NombrePais,
                     idHotel = item.idHotel
                 };
-                nuevaLista.Add(ciudad);
+                nuevaLista.Add(hotelDe);
             }
             gvHoteles.DataSource = nuevaLista;
             gvHoteles.DataBind();

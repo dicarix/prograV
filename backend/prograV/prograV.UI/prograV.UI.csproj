@@ -164,6 +164,7 @@
     <Content Include="fonts\FontAwesome.otf" />
     <Content Include="FrontendView.Master" />
     <Content Include="Frontend\DetalleHotel.aspx" />
+    <Content Include="Frontend\DetalleVuelo.aspx" />
     <Content Include="Frontend\fonts\MundoSansStd-Bold.eot" />
     <Content Include="Frontend\fonts\MundoSansStd-Bold.ttf" />
     <Content Include="Frontend\fonts\MundoSansStd-Bold.woff" />
@@ -398,6 +399,13 @@
     </Compile>
     <Compile Include="Frontend\DetalleHotel.aspx.designer.cs">
       <DependentUpon>DetalleHotel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frontend\DetalleVuelo.aspx.cs">
+      <DependentUpon>DetalleVuelo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frontend\DetalleVuelo.aspx.designer.cs">
+      <DependentUpon>DetalleVuelo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Frontend\Homepage.aspx.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>

@@ -15,11 +15,18 @@ namespace prograV.UI.Frontend
         {
             if (!Page.IsPostBack)
             {
+                lvHoteles.DataSource = hotelBl.ListaHotel();
+                lvHoteles.DataBind();
+
                 update = Request.QueryString["idHotel"];
                 if (!String.IsNullOrEmpty(update))
                 {
                 var detalleHotel = hotelBl.BuscarHotelporId(int.Parse(update));
-
+                    DescripcionTxt.InnerText = detalleHotel.Descripcion;
+                    HotelTxt.InnerText = detalleHotel.NombreHotel;
+                    estrellasTxt.InnerText = detalleHotel.Estrellas.ToString();
+                    costoNocheTxt.InnerText = detalleHotel.CostoNoche.ToString();
+                    costoBaseTxt.InnerText = detalleHotel.CostoBase.ToString();
                 };
             }
         }

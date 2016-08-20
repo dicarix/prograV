@@ -8,8 +8,8 @@
                     <div class="cm-sat-m-slider cm-sat-is-homepage">
                         <div class="js-slick-slider">
                             <div class="slider-item">
-                                <img class="hidden-xs img-responsive slider-image" src="images/sliders/homepage.jpg" alt="">
-                                <img class="visible-xs img-responsive slider-image" src="images/sliders/homepage-mobile.jpg" alt="">
+                                <img class="hidden-xs img-responsive slider-image" src="/Frontend/images/sliders/homepage.jpg" alt="">
+                                <img class="visible-xs img-responsive slider-image" src="/Frontend/images/sliders/homepage-mobile.jpg" alt="">
                                 <div class="sat-shadow"></div>
                                 <div class="slider-container">
                                     <div class="slider-info">
@@ -39,8 +39,8 @@
                                 </div>
                             </div>
                             <div class="slider-item">
-                                <img class="hidden-xs img-responsive slider-image" src="images/sliders/article.jpg" alt="">
-                                <img class="visible-xs img-responsive slider-image" src="images/sliders/article-mobile.jpg" alt="">
+                                <img class="hidden-xs img-responsive slider-image" src="/Frontend/images/sliders/article.jpg" alt="">
+                                <img class="visible-xs img-responsive slider-image" src="/Frontend/images/sliders/article-mobile.jpg" alt="">
                                 <div class="sat-shadow"></div>
                                 <div class="slider-container">
                                     <div class="slider-info">
@@ -70,8 +70,8 @@
                                 </div>
                             </div>
                             <div class="slider-item">
-                                <img class="hidden-xs img-responsive slider-image" src="images/sliders/top10.jpg" alt="">
-                                <img class="visible-xs img-responsive slider-image" src="images/sliders/top10-mobile.jpg" alt="">
+                                <img class="hidden-xs img-responsive slider-image" src="/Frontend/images/sliders/top10.jpg" alt="">
+                                <img class="visible-xs img-responsive slider-image" src="/Frontend/images/sliders/top10-mobile.jpg" alt="">
                                 <div class="sat-shadow"></div>
                                 <div class="slider-container">
                                     <div class="slider-info">
@@ -101,8 +101,8 @@
                                 </div>
                             </div>
                             <div class="slider-item">
-                                <img class="hidden-xs img-responsive slider-image" src="images/sliders/homepage.jpg" alt="">
-                                <img class="visible-xs img-responsive slider-image" src="images/sliders/homepage-mobile.jpg" alt="">
+                                <img class="hidden-xs img-responsive slider-image" src="/Frontend/images/sliders/homepage.jpg" alt="">
+                                <img class="visible-xs img-responsive slider-image" src="/Frontend/images/sliders/homepage-mobile.jpg" alt="">
                                 <div class="sat-shadow"></div>
                                 <div class="slider-container">
                                     <div class="slider-info">
@@ -149,17 +149,18 @@
                     </div>
                     <div class="container is-desktop hidden-xs">
                         <div class="row">
-                            <div class="col-sm-12 col-md-6">
+                            <div class="col-md-12">
                                 <div class="row">
                                     <asp:ListView ID="lvhoteles" runat="server">
                                         <LayoutTemplate>
                                             <asp:PlaceHolder ID="itemPlaceholder" runat="server"></asp:PlaceHolder>
                                         </LayoutTemplate>
                                         <ItemTemplate>
-                                            <div class="col-sm-5 grid-item half-height">
-                                                <a href="/Frontend/DetalleVuelo?idVuelo=<%#Eval("idHotel") %>">
+                                            <div class="col-sm-3 grid-item half-height">
+                                                <a href="/Frontend/DetalleHotel?idHotel=<%#Eval("idHotel") %>">
+
                                                     <div class="loading grid-box item-hover">
-                                                        <img src="images/grids/desktop-homepage-adventures-9.jpg" alt="">
+                                                        <img src="/Frontend/images/grids/desktop-homepage-adventures-9.jpg" alt="">
 
                                                         <div class="sat-shadow"></div>
                                                         <div class="grid-content">
@@ -186,17 +187,18 @@
                     </div>
                     <div class="container is-desktop hidden-xs">
                         <div class="row">
-                            <div class="col-sm-12 col-md-6">
+                            <div class="col-sm-12 col-md-12">
                                 <div class="row">
                                     <asp:ListView ID="lvVuelos" runat="server">
                                         <LayoutTemplate>
                                             <asp:PlaceHolder ID="itemPlaceholder" runat="server"></asp:PlaceHolder>
                                         </LayoutTemplate>
                                         <ItemTemplate>
-                                            <div class="col-sm-5 grid-item half-height">
-                                                <a href="/Frontend/DetalleHotel?idHotel=<%#Eval("idVuelo") %>">
+                                            <div class="col-sm-3 grid-item half-height">
+                                                <a href="/Frontend/DetalleVuelo?idVuelo=<%#Eval("idVuelo") %>">
+
                                                     <div class="loading grid-box item-hover">
-                                                        <img src="images/explore/whowith-mobile.jpg" alt="">
+                                                        <img src="/Frontend/images/explore/whowith-mobile.jpg" alt="">
 
                                                         <div class="sat-shadow"></div>
                                                         <div class="grid-content">

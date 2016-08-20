@@ -1,19 +1,18 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/FrontendView.Master" AutoEventWireup="true" CodeBehind="DetalleHotel.aspx.cs" Inherits="prograV.UI.Frontend.DetalleHotel" %>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/FrontendView.Master" AutoEventWireup="true" CodeBehind="DetalleVuelo.aspx.cs" Inherits="prograV.UI.Frontend.DetalleVuelo" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="cm-sat-p-article">
+<div class="cm-sat-p-article">
         <section id="parallax-content">
             <article id="cm-sat-m-parallax" class="parallax-panel" data-start="z-index:2" data-550-start="z-index:-1">
                 <div class="cover-wrapper">
                     <div class="cm-sat-m-slider cm-sat-is-article">
                         <div class="js-slick-slider">
                             <div class="slider-item">
-                                <img class="hidden-xs img-responsive slider-image" src="images/sliders/article.jpg" alt="">
-                                <img class="visible-xs img-responsive slider-image" src="images/sliders/article-mobile.jpg" alt="">
+                                <img class="hidden-xs img-responsive slider-image" src="images/sliders/search.jpg" alt="">
+                                <img class="visible-xs img-responsive slider-image" src="images/sliders/search-mobile.jpg" alt="">
                                 <div class="sat-shadow"></div>
                                 <div class="slider-container">
                                     <div class="slider-title">
-                                        <h1 id="HotelTxt" runat="server"></h1>
+                                        <h1 id="vuelo" runat="server"></h1>
                                         <h3 id="DescripcionTxt" runat="server"></h3>
                                     </div>
 
