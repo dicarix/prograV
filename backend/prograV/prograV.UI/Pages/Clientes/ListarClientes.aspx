@@ -8,9 +8,9 @@
         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
         <strong id="textoMensajeError" runat="server"></strong>
     </div>
-    <h2>Hoteles</h2>
+    <h2>Clientes</h2>
     <div class="form-group">
-        <asp:GridView runat="server" ID="gvClientes" AutoGenerateColumns="False" CssClass="table table-hover" OnRowDeleting="">
+        <asp:GridView runat="server" ID="gvClientes" AutoGenerateColumns="False" CssClass="table table-hover" OnRowDeleting="gvClientes_RowDeleting">
             <Columns>
                 <asp:BoundField HeaderText="Nombre" DataField="Nombre" SortExpression="Nombre"></asp:BoundField>
                 <asp:BoundField HeaderText="Apellidos" DataField="Apellidos" SortExpression="Apellidos"></asp:BoundField>

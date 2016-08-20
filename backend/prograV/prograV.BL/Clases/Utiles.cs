@@ -11,8 +11,9 @@ namespace prograV.BL
     public class Utiles
     {
         private RijndaelManaged aesEncryption = new RijndaelManaged();
-        protected byte[] key;
-        protected byte[] IV;
+
+        protected static byte[] key;
+        protected static byte[] IV;
 
         public Utiles()
         {
@@ -27,7 +28,7 @@ namespace prograV.BL
             byte[] encrypted;
             using (RijndaelManaged rijAlg = new RijndaelManaged())
             {
-                rijAlg.Key = key;
+                rijAlg.Key = key; 
                 rijAlg.IV = IV;
                 ICryptoTransform encryptor = rijAlg.CreateEncryptor(rijAlg.Key, rijAlg.IV);
                 using (MemoryStream msEncrypt = new MemoryStream())
