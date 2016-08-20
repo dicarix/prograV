@@ -173,7 +173,9 @@
     <Content Include="Pages\Paises\AgregarPais.aspx" />
     <Content Include="Pages\Paises\ListadoPaises.aspx" />
     <Content Include="Pages\Vuelos\AgregarClase.aspx" />
+    <Content Include="Pages\Vuelos\AgregarVuelos.aspx" />
     <Content Include="Pages\Vuelos\ListarClases.aspx" />
+    <Content Include="Pages\Vuelos\ListarVuelos.aspx" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <EmbeddedResource Include="Scripts\app.js" />
@@ -298,12 +300,26 @@
     <Compile Include="Pages\Vuelos\AgregarClase.aspx.designer.cs">
       <DependentUpon>AgregarClase.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Vuelos\AgregarVuelos.aspx.cs">
+      <DependentUpon>AgregarVuelos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Vuelos\AgregarVuelos.aspx.designer.cs">
+      <DependentUpon>AgregarVuelos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Vuelos\ListarClases.aspx.cs">
       <DependentUpon>ListarClases.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\Vuelos\ListarClases.aspx.designer.cs">
       <DependentUpon>ListarClases.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Vuelos\ListarVuelos.aspx.cs">
+      <DependentUpon>ListarVuelos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Vuelos\ListarVuelos.aspx.designer.cs">
+      <DependentUpon>ListarVuelos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">

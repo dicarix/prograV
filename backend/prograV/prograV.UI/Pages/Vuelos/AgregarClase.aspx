@@ -16,7 +16,7 @@
                 <label class="col-md-4 control-label" for="txtTipoClase">Clase</label>
                 <div class="col-md-4">
                     <asp:TextBox ID="txtTipoClase" runat="server" name="txtTipoClase" class="form-control input-md" required=""></asp:TextBox>
-
+                    
                 </div>
             </div>
         </fieldset>

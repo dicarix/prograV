@@ -46,7 +46,28 @@ namespace prograV.UI.Pages.Hoteles
 
         protected void btnActualizarHotel_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                var hotel = new Datos.Hoteles()
+                {
+                    CostoBase = float.Parse(txtCostoBase.Text),
+                    CostoNoche = float.Parse(txtCostoNoche.Text),
+                    Descripcion = txtDescripcion.Text,
+                    Estrellas = hotelRating.CurrentRating,
+                    idPais = paisObj.BuscarPaisporNombre(ddlPais.SelectedItem.Text).idPais,
+                    NombreHotel = txtNombreHotel.Text,
+                    tipoHabitacion = habitacionObj.BuscarTipoHabitacionporNombre(ddlHabitacion.SelectedItem.Text).idTipoHabitacion
+                };
+                update = Request.QueryString["idHotel"];
+                hotelesObj.ActualizarHotel(hotel, update);
+                AlertMensaje.Visible = true;
+                textoMensaje.InnerHtml = "Hotel actualizado";
+            }
+            catch (Exception ex)
+            {
+                mensajeError.Visible = true;
+                textoMensajeError.InnerHtml = "No se pudo actualizar";
+            }
         }
 
         protected void btnAgregarhotel_Click(object sender, EventArgs e)
