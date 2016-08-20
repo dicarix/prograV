@@ -7,11 +7,19 @@ using System.Web.UI.WebControls;
 
 namespace prograV.UI.Pages.Clientes
 {
-    public partial class ListarClientes : System.Web.UI.Page
-    {
-        protected void Page_Load(object sender, EventArgs e)
-        {
+	public partial class ListarClientes : System.Web.UI.Page
+	{
+		public static BL.ICliente clienteBl = new BL.Cliente();
 
-        }
-    }
+		protected void Page_Load(object sender, EventArgs e)
+		{
+			if (!Page.IsPostBack)
+			{
+				List<Datos.Cliente> listaClientes= clienteBl.ListaCliente();
+				gvClientes.DataSource = listaClientes;
+				gvClientes.DataBind();
+
+			}
+		}
+	}
 }
