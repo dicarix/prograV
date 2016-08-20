@@ -8,6 +8,7 @@ namespace prograV.Datos
 {
     public class Cliente
     {
+        public int idCliente { get; set; }
         public string Nombre { get; set; }
         public string Apellidos { get; set; }
         public string Email { get; set; }

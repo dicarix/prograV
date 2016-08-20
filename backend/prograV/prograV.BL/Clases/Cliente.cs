@@ -9,34 +9,39 @@ namespace prograV.BL
 {
     public class Cliente : ICliente
     {
+        private DS.Cliente clienteObj;
+        public Cliente()
+        {
+            clienteObj = new DS.Cliente();
+        }
         public void ActualizarCliente(Datos.Cliente cliente, string clave)
         {
-            throw new NotImplementedException();
+            clienteObj.ActualizarCliente(cliente,clave);
         }
 
         public Datos.Cliente BuscarClienteporID(int id)
         {
-            throw new NotImplementedException();
+            return clienteObj.BuscarClienteporID(id);
         }
 
         public Datos.Cliente BuscarClienteporNombre(string nombreCliente)
         {
-            throw new NotImplementedException();
+            return  clienteObj.BuscarClienteporNombre(nombreCliente);
         }
 
-        public void EliminarCliente(Datos.Cliente Cliente)
+        public void EliminarCliente(Datos.Cliente cliente)
         {
-            throw new NotImplementedException();
+            clienteObj.EliminarCliente(cliente);
         }
 
         public void InsertarCliente(Datos.Cliente cliente)
         {
-            throw new NotImplementedException();
+            cliente.InsertarCliente(cliente);
         }
 
         public List<Datos.Cliente> ListaCliente()
         {
-            throw new NotImplementedException();
+            return clienteObj.ListaCliente();
         }
     }
 }
