@@ -14,9 +14,30 @@ namespace prograV.BL
         {
             tipo = new DS.TipoHabitacion();
         }
+
+        public void ActualizarTipoHabitacion(tipoHabitacion habitacion, string clave)
+        {
+            tipo.ActualizarTipoHabitacion(habitacion, clave);
+        }
+
+        public tipoHabitacion BuscarTipoHabitacionporNombre(string nombreTipoHabitacion)
+        {
+            return tipo.BuscarTipoHabitacionporNombre(nombreTipoHabitacion);
+        }
+
+        public void EliminarTipoHabitacion(tipoHabitacion tipoHabitacion)
+        {
+            tipo.EliminarTipoHabitacion(tipoHabitacion);
+        }
+
         public void InsertarTipoHabitacion(tipoHabitacion tipoHabitacion)
         {
             tipo.InsertarTipoHabitacion(tipoHabitacion);
+        }
+
+        public List<tipoHabitacion> ListaTipoHabitacion()
+        {
+            return tipo.ListaTipoHabitacion();
         }
     }
 }

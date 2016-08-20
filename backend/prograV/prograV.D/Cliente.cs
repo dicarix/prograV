@@ -12,5 +12,6 @@ namespace prograV.Datos
         public string Apellidos { get; set; }
         public string Email { get; set; }
         public string Telefono { get; set; }
+        public byte[] Contrasena { get; set; }
     }
 }

@@ -6,17 +6,18 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <title><%: Page.Title %></title>
 
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
 
-    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
-<body>
+<body class="navbar-fixed sidebar-nav fixed-nav">
+
     <form runat="server">
         <asp:ScriptManager runat="server">
             <Scripts>
@@ -38,35 +39,118 @@
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
-
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" runat="server" href="~/">Application name</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
-                    </ul>
-                </div>
+        <header class="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Tico Travel</a>
+                <ul class="nav navbar-nav hidden-md-down">
+                    <li class="nav-item">
+                        <a class="nav-link navbar-toggler layout-toggler" href="#">&#9776;</a>
+                    </li>
+                    <li class="nav-item p-x-1">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item p-x-1">
+                        <a class="nav-link" href="#">Usuarios</a>
+                    </li>
+                </ul>
             </div>
+        </header>
+        <div class="sidebar">
+            <nav class="sidebar-nav">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/"><i class="icon-speedometer"></i>Dashboard </a>
+                    </li>
+                    <li class="nav-item nav-dropdown">
+                        <a class="nav-link nav-dropdown-toggle" href="#"><i class="fa fa-user"></i>Clientes</a>
+                        <ul class="nav-dropdown-items">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Pages/Paises/AgregarPais" target="_top"><i class="fa fa-plus-circle"></i>Agregar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Pages/Paises/ListadoPaises" target="_top"><i class="fa fa-file"></i>Listar</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-dropdown">
+                        <a class="nav-link nav-dropdown-toggle" href="#"><i class="fa fa-plane"></i>Vuelos</a>
+                        <ul class="nav-dropdown-items">
+                             <li class="nav-item">
+                                <a class="nav-link" href="/Pages/Vuelos/AgregarClase" target="_top"><i class="fa fa-plus-circle"></i>Agregar Clase Vuelo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Pages/Vuelos/ListarClases" target="_top"><i class="fa fa-file"></i>Listar Clase Vuelo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Pages/Vuelos/AgregarVuelos" target="_top"><i class="fa fa-plus-circle"></i>Agregar Vuelos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Pages/Vuelos/ListarVuelos" target="_top"><i class="fa fa-file"></i>Listar Vuelos</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-dropdown">
+                        <a class="nav-link nav-dropdown-toggle" href="#"><i class="fa fa-bed"></i>Hoteles</a>
+                        <ul class="nav-dropdown-items">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Pages/Hoteles/AgregarHotel" target="_top"><i class="fa fa-plus-circle"></i>Agregar Hotel</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Pages/Hoteles/ListarHoteles" target="_top"><i class="fa fa-file"></i>Listar Hoteles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Pages/Hoteles/AgregarHabitacion" target="_top"><i class="fa fa-plus-circle"></i>Agregar Habitacion</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Pages/Hoteles/ListarHabitaciones" target="_top"><i class="fa fa-file"></i>Listar Habitaciones</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-dropdown">
+                        <a class="nav-link nav-dropdown-toggle" href="#"><i class="fa fa-flag"></i>Paises</a>
+                        <ul class="nav-dropdown-items">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Pages/Paises/AgregarPais" target="_top"><i class="fa fa-plus-circle"></i>Agregar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Pages/Paises/ListadoPaises" target="_top"><i class="fa fa-file"></i>Listar</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-dropdown">
+                        <a class="nav-link nav-dropdown-toggle" href="#"><i class="fa fa-flag-o"></i>Ciudades</a>
+                        <ul class="nav-dropdown-items">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Pages/Ciudades/AgregarCiudad" target="_top"><i class="fa fa-plus-circle"></i>Agregar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Pages/Ciudades/ListarCiudades.aspx" target="_top"><i class="fa fa-file"></i>Listar</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-dropdown">
+                        <a class="nav-link nav-dropdown-toggle" href="#"><i class="fa fa-ticket"></i>Reservaciones</a>
+                        <ul class="nav-dropdown-items">
+                            <li class="nav-item">
+                                <a class="nav-link" href="" target="_top"><i class="fa fa-plus-circle"></i>Reservaciones Hotel</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="" target="_top"><i class="fa fa-pencil-square"></i>Reservaciones Vuelos</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <div class="container body-content">
+        <div class="main">
+
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
-            <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
-            </footer>
+
         </div>
 
     </form>
+    <script src="/Scripts/app.js"></script>
 </body>
 </html>

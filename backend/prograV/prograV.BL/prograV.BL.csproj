@@ -40,8 +40,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\Ciudad.cs" />
+    <Compile Include="Clases\Cliente.cs" />
+    <Compile Include="Clases\Hotel.cs" />
+    <Compile Include="Clases\Pais.cs" />
     <Compile Include="Clases\TipoHabitacion.cs" />
+    <Compile Include="Clases\TipoVuelo.cs" />
+    <Compile Include="Clases\Vuelo.cs" />
+    <Compile Include="Interfaces\ICiudad.cs" />
+    <Compile Include="Interfaces\ICliente.cs" />
+    <Compile Include="Interfaces\IHotel.cs" />
+    <Compile Include="Interfaces\IPais.cs" />
     <Compile Include="Interfaces\ITipoHabitacion.cs" />
+    <Compile Include="Interfaces\ITipoVuelo.cs" />
+    <Compile Include="Interfaces\IVuelos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Clases\Utiles.cs" />
   </ItemGroup>

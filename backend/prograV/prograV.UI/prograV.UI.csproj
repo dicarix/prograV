@@ -43,6 +43,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=16.1.1.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.16.1.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
       <Private>True</Private>
@@ -133,11 +137,19 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Pages\Clientes\" />
+    <Folder Include="Pages\Reservaciones\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Admin.css" />
+    <Content Include="Content\Admin.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <EmbeddedResource Include="Content\images\stars.png" />
     <Content Include="Content\Site.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -145,9 +157,28 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\Admin.css.map" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Pages\Ciudades\AgregarCiudad.aspx" />
+    <Content Include="Pages\Ciudades\ListarCiudades.aspx" />
+    <Content Include="Pages\Hoteles\AgregarHabitacion.aspx" />
+    <Content Include="Pages\Hoteles\AgregarHotel.aspx" />
+    <Content Include="Pages\Hoteles\ListarHabitaciones.aspx" />
+    <Content Include="Pages\Hoteles\ListarHoteles.aspx" />
+    <Content Include="Pages\Paises\AgregarPais.aspx" />
+    <Content Include="Pages\Paises\ListadoPaises.aspx" />
+    <Content Include="Pages\Vuelos\AgregarClase.aspx" />
+    <Content Include="Pages\Vuelos\AgregarVuelos.aspx" />
+    <Content Include="Pages\Vuelos\ListarClases.aspx" />
+    <Content Include="Pages\Vuelos\ListarVuelos.aspx" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
+    <EmbeddedResource Include="Scripts\app.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -185,7 +216,6 @@
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="packages.config" />
-    <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -206,6 +236,90 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Ciudades\AgregarCiudad.aspx.cs">
+      <DependentUpon>AgregarCiudad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Ciudades\AgregarCiudad.aspx.designer.cs">
+      <DependentUpon>AgregarCiudad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Ciudades\ListarCiudades.aspx.cs">
+      <DependentUpon>ListarCiudades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Ciudades\ListarCiudades.aspx.designer.cs">
+      <DependentUpon>ListarCiudades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Hoteles\AgregarHabitacion.aspx.cs">
+      <DependentUpon>AgregarHabitacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Hoteles\AgregarHabitacion.aspx.designer.cs">
+      <DependentUpon>AgregarHabitacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Hoteles\AgregarHotel.aspx.cs">
+      <DependentUpon>AgregarHotel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Hoteles\AgregarHotel.aspx.designer.cs">
+      <DependentUpon>AgregarHotel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Hoteles\ListarHabitaciones.aspx.cs">
+      <DependentUpon>ListarHabitaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Hoteles\ListarHabitaciones.aspx.designer.cs">
+      <DependentUpon>ListarHabitaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Hoteles\ListarHoteles.aspx.cs">
+      <DependentUpon>ListarHoteles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Hoteles\ListarHoteles.aspx.designer.cs">
+      <DependentUpon>ListarHoteles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Paises\AgregarPais.aspx.cs">
+      <DependentUpon>AgregarPais.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Paises\AgregarPais.aspx.designer.cs">
+      <DependentUpon>AgregarPais.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Paises\ListadoPaises.aspx.cs">
+      <DependentUpon>ListadoPaises.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Paises\ListadoPaises.aspx.designer.cs">
+      <DependentUpon>ListadoPaises.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Vuelos\AgregarClase.aspx.cs">
+      <DependentUpon>AgregarClase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Vuelos\AgregarClase.aspx.designer.cs">
+      <DependentUpon>AgregarClase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Vuelos\AgregarVuelos.aspx.cs">
+      <DependentUpon>AgregarVuelos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Vuelos\AgregarVuelos.aspx.designer.cs">
+      <DependentUpon>AgregarVuelos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Vuelos\ListarClases.aspx.cs">
+      <DependentUpon>ListarClases.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Vuelos\ListarClases.aspx.designer.cs">
+      <DependentUpon>ListarClases.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Vuelos\ListarVuelos.aspx.cs">
+      <DependentUpon>ListarVuelos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Vuelos\ListarVuelos.aspx.designer.cs">
+      <DependentUpon>ListarVuelos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
